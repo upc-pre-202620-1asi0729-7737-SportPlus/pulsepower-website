@@ -54,5 +54,22 @@
         step4Desc: "Recibe sugerencias personalizadas según tus datos recientes y metas. Utiliza estos insights para calibrar la intensidad de tu entrenamiento, descanso y hábitos de sueño.",
         step5Num: "05",
         step5Title: "Monitorea tu Progreso",
-        step5Desc: "Revisa tus tendencias e informes de progreso a lo largo del tiempo. Identifica cambios en tus hábitos y ajusta tu rutina conforme evolucionan tus necesidades."
+        step5Desc: "Revisa tus" +
+            " tendencias e informes de progreso a lo largo del tiempo. Identifica cambios en tus hábitos y ajusta tu rutina conforme evolucionan tus necesidades."
+    },
+    ctaBanner: {
+        title: "Tu Transformación Comienza Ahora",
+        subtitle: "Tu cuerpo habla todos los días. Nuestra plataforma lo traduce. Descubre cómo tus datos de sueño, esfuerzo y recuperación pueden ayudarte a planificar tus actividades con mayor claridad.",
+        btn: "Reserva tu Consulta Gratuita"
+    },
+    videoSection: {
+        title: "Cómo Funciona PulsePower",
+        tab1: "Monitoreo Fisiológico",
+        tab2: "Sueño y Recuperación",
+        tab3: "Recomendaciones de IA",
+        tab4: "Informes de Progreso",
+        tab1Desc: "Monitoreo continuo en tiempo real de variabilidad cardíaca, temperatura cutánea y métricas de esfuerzo diario.",
+        tab2Desc: "Análisis profundo de fases del sueño, alineación circadiana y puntuaciones de recuperación autonómica.",
+        tab3Desc: "Motor inteligente de coaching que adapta cargas de entrenamiento y protocolos de descanso activo a tu estado diario.",
+        tab4Desc: "Tendencias longitudinales de biomarcadores, índices semanales de fatiga e informes exportables para tus entrenadores.",
     },
