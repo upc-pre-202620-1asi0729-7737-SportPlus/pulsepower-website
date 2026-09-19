@@ -1282,3 +1282,63 @@ img, svg {
 .btn-pricing-pro:hover {
   background: #14B8A6;
 }
+/* ==========================================================================
+   Overview & Secondary Video Section
+   ========================================================================== */
+.overview-section {
+  background: var(--color-lavender);
+  padding: 90px 24px;
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.overview-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.overview-title {
+  font-family: 'Rubik', sans-serif;
+  font-size: clamp(28px, 3.4vw, 38px);
+  font-weight: 600;
+  color: #232D45;
+  line-height: 1.25;
+}
+
+.overview-desc {
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(43, 43, 43, 0.85);
+}
+
+.overview-points {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.overview-point-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 15px;
+  color: rgba(43, 43, 43, 0.85);
+  line-height: 1.5;
+}
+
+.overview-point-bullet {
+  color: #174DAD;
+  font-size: 14px;
+  margin-top: 3px;
+}
