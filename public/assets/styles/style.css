@@ -502,3 +502,67 @@ img, svg {
   border-radius: 3px;
   transform: rotate(45deg);
 }
+
+/* ==========================================================================
+   Science-Backed Coaching Section
+   ========================================================================== */
+.science-section {
+  padding: 90px 24px;
+  background: #FFFFFF;
+  text-align: center;
+}
+
+.science-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.section-title-large {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: clamp(34px, 4.5vw, 54px);
+  line-height: 1.15;
+  color: #000000;
+  letter-spacing: -0.5px;
+}
+
+.section-desc-medium {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #4A4A4A;
+  max-width: 680px;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--color-teal);
+  color: #202020;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 14px 28px;
+  border-radius: 40px;
+  box-shadow: 0 6px 18px rgba(45, 212, 191, 0.3);
+  margin-top: 8px;
+}
+
+.btn-primary:hover {
+  background: #14B8A6;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(45, 212, 191, 0.4);
+}
+
+.team-lineup-wrapper {
+  margin-top: 48px;
+  width: 100%;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
