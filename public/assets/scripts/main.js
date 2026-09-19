@@ -15,3 +15,34 @@ function flattenTranslations(obj, prefix) {
         return acc;
     }, {});
 }
+
+
+function applyTranslations(lang) {
+    var source = lang === 'en' ? translationsEN : translationsES;
+    var flat = flattenTranslations(source);
+
+    // Apply to [data-i18n]
+    document.querySelectorAll('[data-i18n]').forEach(function (el) {
+        var key = el.getAttribute('data-i18n');
+        if (flat[key] === undefined) return;
+
+        // Handle elements with children
+        var hasChildElements = el.children.length > 0;
+        if (hasChildElements) {
+            var textNode = null;
+            for (var i = 0; i < el.childNodes.length; i++) {
+                if (el.childNodes[i].nodeType === Node.TEXT_NODE && el.childNodes[i].nodeValue.trim().length > 0) {
+                    textNode = el.childNodes[i];
+                    break;
+                }
+            }
+            if (textNode) {
+                textNode.nodeValue = flat[key];
+            } else {
+                el.insertBefore(document.createTextNode(flat[key]), el.firstChild);
+            }
+        } else {
+            el.textContent = flat[key];
+        }
+    });
+
