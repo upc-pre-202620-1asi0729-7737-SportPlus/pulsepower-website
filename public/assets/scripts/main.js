@@ -180,3 +180,22 @@ document.addEventListener('DOMContentLoaded', function () {
             videoTabs.forEach(function (t) { t.classList.remove('active'); });
             tab.classList.add('active');
 
+            var tabKey = tab.dataset.tab;
+            if (videoIframe && videoEmbeds[tabKey]) {
+                videoIframe.src = videoEmbeds[tabKey];
+            }
+
+            if (videoTabContent) {
+                var transKey = 'videoSection.' + tabKey + 'Desc';
+                videoTabContent.setAttribute('data-i18n', transKey);
+                applyTranslations(currentLang);
+            }
+        });
+    });
+
+    // Pricing Plans Toggle (Monthly / Annual)
+    var planToggles = document.querySelectorAll('.plan-toggle-btn');
+    var monthlyPrices = document.querySelectorAll('.price-monthly');
+    var annualPrices = document.querySelectorAll('.price-annual');
+    var saveBadges = document.querySelectorAll('.annual-save-badge');
+
