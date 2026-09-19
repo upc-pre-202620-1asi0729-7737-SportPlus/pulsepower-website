@@ -460,3 +460,45 @@ img, svg {
   padding: 4px 12px;
   border-radius: 20px;
 }
+/* ==========================================================================
+   Ticker / Marquee Banner
+   ========================================================================== */
+.marquee-ribbon {
+  background: #E2E8F0;
+  border-top: 1px solid #CBD5E1;
+  border-bottom: 1px solid #CBD5E1;
+  padding: 24px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 32px;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 24px;
+  flex-wrap: wrap;
+}
+
+.marquee-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: clamp(15px, 1.6vw, 20px);
+  color: #202020;
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
+}
+
+.marquee-bullet {
+  width: 14px;
+  height: 14px;
+  background: #174DAD;
+  border-radius: 3px;
+  transform: rotate(45deg);
+}
