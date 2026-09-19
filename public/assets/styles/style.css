@@ -826,3 +826,112 @@ img, svg {
   max-width: 760px;
   line-height: 1.6;
 }
+
+/* ==========================================================================
+   Interactive Video Section (Dark Navy)
+   ========================================================================== */
+.video-section-dark {
+  background: var(--color-hero-bg);
+  padding: 90px 24px;
+  color: #FFFFFF;
+}
+
+.video-section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.video-section-header h2 {
+  font-family: 'Rubik', sans-serif;
+  font-size: clamp(32px, 3.8vw, 48px);
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 48px;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.video-player-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 24px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  background: #0B132B;
+}
+
+.video-player-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-tabs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.video-feature-tab {
+  background: #FFFFFF;
+  border-radius: 18px;
+  padding: 20px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.video-feature-tab h3 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #101B35;
+}
+
+.video-feature-tab i {
+  color: var(--color-teal);
+  font-size: 18px;
+}
+
+.video-feature-tab:hover {
+  transform: translateX(6px);
+  border-color: var(--color-teal);
+}
+
+.video-feature-tab.active {
+  border-color: var(--color-teal);
+  background: #F0FDF4;
+}
+
+.video-feature-tab.active h3 {
+  color: #0D9488;
+}
+
+.video-active-desc-box {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 20px 24px;
+  border-radius: 16px;
+  margin-top: 8px;
+}
+
+.video-active-desc-box p {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 15px;
+  color: #E2E8F0;
+}
