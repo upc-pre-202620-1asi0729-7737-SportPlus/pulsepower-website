@@ -82,3 +82,32 @@ function applyTranslations(lang) {
         }
     }
 
+    // Synchronize Floating switcher
+    document.querySelectorAll('.floating-lang-btn').forEach(function (btn) {
+        btn.classList.toggle('active', btn.dataset.lang === lang);
+    });
+
+    // Update HTML lang attribute
+    document.documentElement.lang = lang;
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Initialize translations
+    applyTranslations(currentLang);
+
+    // Navbar Language Toggle Click
+    var navSwitch = document.querySelector('.navbar-lang-switch');
+    if (navSwitch) {
+        navSwitch.addEventListener('click', function (e) {
+            var opt = e.target.closest('.lang-opt');
+            if (opt && opt.dataset.lang) {
+                currentLang = opt.dataset.lang;
+            } else {
+                // Toggle if clicked on track
+                currentLang = currentLang === 'en' ? 'es' : 'en';
+            }
+            localStorage.setItem('pulsepower-lang', currentLang);
+            applyTranslations(currentLang);
+        });
+    }
+
