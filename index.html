@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PulsePower | Physiological Intelligence & Wellness</title>
+    <meta name="description" content="PulsePower turns your sleep, strain and recovery data into clear insights to help you plan your training, rest and everyday wellbeing." />
+    <link rel="icon" type="image/png" href="public/assets/images/pulsepower-logo.png" />
+
+    <!-- Icons & Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="public/assets/styles/style.css" />
+</head>
+<body>
+
+<!-- ================= Header & Navbar ================= -->
+<header class="header">
+    <div class="nav-container">
+        <a href="#home" class="brand-logo">
+            <img src="public/assets/images/pulsepower-logo.png" alt="PulsePower Logo" />
+        </a>
+
+        <div class="nav-center-wrapper">
+            <nav class="nav-links">
+                <a href="#features" data-i18n="nav.features">Features</a>
+                <a href="#services" data-i18n="nav.benefits">Benefits</a>
+                <a href="#about" data-i18n="nav.about">About Us</a>
+                <a href="#team" data-i18n="team.heading">Our Team</a>
+                <a href="#plans" data-i18n="nav.plans">Plans</a>
+            </nav>
+        </div>
+
+        <div class="nav-actions">
+            <!-- Bilingual Switcher Toggle in Navbar (Figma style) -->
+            <div class="navbar-lang-switch" title="Cambiar idioma / Switch language">
+                <span class="lang-opt" data-lang="en">EN</span>
+                <div class="switch-track">
+                    <div class="switch-thumb"></div>
+                </div>
+                <span class="lang-opt active" data-lang="es">ES</span>
+            </div>
+
+            <a href="#plans" class="btn-login" data-i18n="nav.login">Log In</a>
+            <a href="#plans" class="btn-signup" data-i18n="nav.signup">Sign Up</a>
+
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+    </div>
+</header>
+
+<!-- ================= Hero Section ================= -->
+<section class="hero-section" id="home">
+    <div class="hero-glow"></div>
+    <div class="hero-watermark" data-i18n="hero.watermark">HEALTH</div>
+
+    <div class="hero-grid">
+        <!-- Left Content -->
+        <div class="hero-left">
+            <span class="hero-tag" data-i18n="hero.tag">Transform Your Body, Optimize Your</span>
+            <h1 class="hero-title">
+                Pulse<span class="highlight-teal">Power</span>
+            </h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">
+                PulsePower turns your sleep, strain and recovery data into clear insights to help you plan your training and rest.
+            </p>
+            <a href="#services" class="hero-cta-btn">
+                <span data-i18n="hero.cta">Start Your Transformation</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <!-- Center Athlete Image -->
+        <div class="hero-center">
+            <img src="public/assets/images/hero-athlete-real.png" alt="Athletic training hero" class="hero-athlete-img" />
+        </div>
+
+        <!-- Right Stat Card -->
+        <div class="hero-right">
+            <div class="hero-stat-card">
+                <h3 class="stat-card-title" data-i18n="hero.cardTitle">Sleep, strain and recovery</h3>
+
+                <div class="avatar-bubbles">
+                    <div class="avatar-bubble" style="background-image: url('public/assets/images/team-luis.svg');"></div>
+                    <div class="avatar-bubble" style="background-image: url('public/assets/images/team-miroslav.svg');"></div>
+                    <div class="avatar-bubble" style="background-image: url('public/assets/images/team-bruno.svg');"></div>
+                </div>
+
+                <div class="stat-badge">
+                    <i class="fas fa-microchip"></i>
+                    <span data-i18n="hero.cardBadge">AI Insights</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= Marquee / Ticker Ribbon ================= -->
+<div class="marquee-ribbon">
+    <div class="marquee-content">
+        <div class="marquee-item">
+            <span data-i18n="marquee.item1">Evidence-Based Coaching</span>
+            <div class="marquee-bullet"></div>
+        </div>
+        <div class="marquee-item">
+            <span data-i18n="marquee.item2">Hormone & Gut Health Optimization</span>
+            <div class="marquee-bullet"></div>
+        </div>
+        <div class="marquee-item">
+            <span data-i18n="marquee.item3">Physique Transformation Experts</span>
+            <div class="marquee-bullet"></div>
+        </div>
+        <div class="marquee-item">
+            <span data-i18n="marquee.item1">Evidence-Based Coaching</span>
+            <div class="marquee-bullet"></div>
+        </div>
+        <div class="marquee-item">
+            <span data-i18n="marquee.item2">Hormone & Gut Health Optimization</span>
+        </div>
+    </div>
+</div>
+
+<!-- ================= Science-Backed Coaching Section ================= -->
+<section class="science-section">
+    <div class="science-container">
+        <h2 class="section-title-large" data-i18n="science.title">
+            Science-Backed, Results Driven Coaching
+        </h2>
+        <p class="section-desc-medium" data-i18n="science.subtitle">
+            Turn your physiological data into clear guidance. Understand your habits and find a balance between activity and rest with insights tailored to you.
+        </p>
+        <a href="#team" class="btn-primary">
+            <span data-i18n="science.cta">Meet the Team</span>
+            <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+
+    <!-- Team Lineup Graphic -->
+    <div class="team-lineup-wrapper">
+        <img src="public/assets/images/team-strip-real.png" alt="PulsePower Specialists Lineup" />
+    </div>
+</section>
+
+<!-- ================= Coaching Services Section ================= -->
+<section class="services-section" id="services">
+    <div class="services-grid">
+        <!-- Left Accordions -->
+        <div class="services-left">
+            <h2 class="section-title-large" data-i18n="services.title">Our Coaching Services</h2>
+            <p class="section-desc-medium" data-i18n="services.subtitle">
+                PulsePower brings your sleep, strain and recovery records together to support informed decisions about your daily routine.
+            </p>
+
+            <div class="services-accordion-list">
+                <!-- Accordion 1 -->
+                <div class="service-accordion-card active">
+                    <div class="service-card-header">
+                        <h3 data-i18n="services.item1Title">Detailed Assessment</h3>
+                        <div class="service-arrow-btn"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                    <div class="service-card-body">
+                        <p data-i18n="services.item1Desc">
+                            Comprehensive biometric analysis, metabolic baseline evaluation, and health biomarker profiling to pinpoint your unique physiological starting point.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Accordion 2 -->
+                <div class="service-accordion-card">
+                    <div class="service-card-header">
+                        <h3 data-i18n="services.item2Title">Custom Goal-Aligned Plan</h3>
+                        <div class="service-arrow-btn"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                    <div class="service-card-body">
+                        <p data-i18n="services.item2Desc">
+                            Periodized training programs and nutritional guidance engineered specifically around your recovery capacity and personal goals.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Accordion 3 -->
+                <div class="service-accordion-card">
+                    <div class="service-card-header">
+                        <h3 data-i18n="services.item3Title">Root Cause Lab & Biomarker Analysis</h3>
+                        <div class="service-arrow-btn"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                    <div class="service-card-body">
+                        <p data-i18n="services.item3Desc">
+                            In-depth investigation of hormonal balances, gut microbiome vitality, and micronutrient status to resolve hidden barriers to progress.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Accordion 4 -->
+                <div class="service-accordion-card">
+                    <div class="service-card-header">
+                        <h3 data-i18n="services.item4Title">Dedicated Coaching</h3>
+                        <div class="service-arrow-btn"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                    <div class="service-card-body">
+                        <p data-i18n="services.item4Desc">
+                            1-on-1 mentorship with certified specialists who continuously adapt your program based on live wearable feedback.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Workout Media -->
+        <div class="services-right">
+            <img src="public/assets/images/workout-plank-real.jpg" alt="Athlete training form" class="services-right-img" />
+        </div>
+    </div>
+</section>
+
+<!-- ================= How PulsePower Works (5 Steps) ================= -->
+<section class="steps-section" id="steps">
+    <div class="steps-header">
+        <h2 class="section-title-large" data-i18n="steps.title">How PulsePower Works</h2>
+        <p class="section-desc-medium" data-i18n="steps.subtitle">
+            Understand your body through a connected experience. From setting your goals to tracking your progress, PulsePower turns your sleep, strain and recovery data into personalized guidance for your daily routine.
+        </p>
+    </div>
+
+    <div class="steps-grid">
+        <!-- Step 01 -->
+        <div class="step-card step-card-01">
+            <div class="step-top-arch">
+                <div class="step-number-bubble">01</div>
+                <img src="public/assets/images/step-01.svg" alt="Set Your Goals" class="step-illustration" />
+            </div>
+            <div class="step-content">
+                <h3 data-i18n="steps.step1Title">Set Your Goals</h3>
+                <p data-i18n="steps.step1Desc">
+                    Create your profile and tell us about your training, sleep habits and wellbeing goals. PulsePower uses this information to personalize your experience.
+                </p>
+            </div>
+        </div>
+
+        <!-- Step 02 -->
+        <div class="step-card step-card-02">
+            <div class="step-top-arch">
+                <div class="step-number-bubble">02</div>
+                <img src="public/assets/images/step-02.svg" alt="Connect Your Wearable" class="step-illustration" />
+            </div>
+            <div class="step-content">
+                <h3 data-i18n="steps.step2Title">Connect Your Wearable</h3>
+                <p data-i18n="steps.step2Desc">
+                    Link your compatible wristband to sync your physiological data. Bring your sleep, strain and recovery records together in one place.
+                </p>
+            </div>
+        </div>
+
+        <!-- Step 03 -->
+        <div class="step-card step-card-03">
+            <div class="step-top-arch">
+                <div class="step-number-bubble">03</div>
+                <img src="public/assets/images/step-03.svg" alt="Understand Your Body" class="step-illustration" />
+            </div>
+            <div class="step-content">
+                <h3 data-i18n="steps.step3Title">Understand Your Body</h3>
+                <p data-i18n="steps.step3Desc">
+                    Explore your daily indicators through clear summaries. Ask the AI assistant to explain your data and help you understand your patterns.
+                </p>
+            </div>
+        </div>
+
+        <!-- Step 04 -->
+        <div class="step-card step-card-04">
+            <div class="step-top-arch">
+                <div class="step-number-bubble">04</div>
+                <img src="public/assets/images/step-04.svg" alt="Plan Your Daily Routine" class="step-illustration" />
+            </div>
+            <div class="step-content">
+                <h3 data-i18n="steps.step4Title">Plan Your Daily Routine</h3>
+                <p data-i18n="steps.step4Desc">
+                    Receive personalized suggestions based on your recent data and goals. Use these insights to review your training intensity, rest periods and sleep habits.
+                </p>
+            </div>
+        </div>
+
+        <!-- Step 05 -->
+        <div class="step-card step-card-05">
+            <div class="step-top-arch">
+                <div class="step-number-bubble">05</div>
+                <img src="public/assets/images/step-05.svg" alt="Track Your Progress" class="step-illustration" />
+            </div>
+            <div class="step-content">
+                <h3 data-i18n="steps.step5Title">Track Your Progress</h3>
+                <p data-i18n="steps.step5Desc">
+                    Review your trends and progress reports over time. Recognize changes in your habits and adjust your routine as your needs evolve.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= Mid CTA Banner ================= -->
+<section class="cta-banner-section">
+    <div class="cta-banner-box">
+        <h2 data-i18n="ctaBanner.title">Your Transformation Starts Now</h2>
+        <p data-i18n="ctaBanner.subtitle">
+            Your body speaks every day. Our platform translates it. Discover how your sleep, strain and recovery data can help you plan your activities with greater clarity.
+        </p>
+        <a href="#plans" class="btn-primary">
+            <span data-i18n="ctaBanner.btn">Book Your Free Consult</span>
+            <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+</section>
+
+<!-- ================= Dark Video Feature Section ================= -->
+<section class="video-section-dark" id="features">
+    <div class="video-section-header">
+        <h2 data-i18n="videoSection.title">How PulsePower Works</h2>
+    </div>
+
+    <div class="video-grid">
+        <!-- Video Player Placeholder -->
+        <div class="video-player-container video-placeholder">
+            <div class="youtube-play-link">
+                <div class="youtube-play-btn">
+                    <i class="fas fa-play"></i>
+                </div>
+                <span class="youtube-play-text">Watch Video</span>
+            </div>
+        </div>
+
+        <!-- Interactive Feature Tabs -->
+        <div class="video-tabs-list">
+            <div class="video-feature-tab active" data-tab="tab1">
+                <h3 data-i18n="videoSection.tab1">Physiological Monitoring</h3>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+
+            <div class="video-feature-tab" data-tab="tab2">
+                <h3 data-i18n="videoSection.tab2">Sleep & Recovery</h3>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+
+            <div class="video-feature-tab" data-tab="tab3">
+                <h3 data-i18n="videoSection.tab3">AI Recommendations</h3>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+
+            <div class="video-feature-tab" data-tab="tab4">
+                <h3 data-i18n="videoSection.tab4">Progress Reports</h3>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+
+            <div class="video-active-desc-box">
+                <p id="video-feature-desc" data-i18n="videoSection.tab1Desc">
+                    Continuous real-time tracking of heart rate variability, skin temperature, and daily strain metrics.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= Our Team Section ================= -->
+<section class="team-section" id="team">
+    <div class="team-header">
+        <h2 data-i18n="team.heading">Our Team</h2>
+    </div>
+
+    <div class="team-cards-grid">
+        <!-- Fila 1 -->
+        <!-- Member 1: Sergio -->
+        <div class="team-card">
+            <div class="team-avatar-wrapper">
+                <img src="public/assets/images/team-sergio.jpg" alt="Evangelista Ygnacio, Sergio Joaquin" />
+            </div>
+            <h3>Evangelista Ygnacio, Sergio Joaquin</h3>
+            <p class="team-role">Software Engineering Student</p>
+            <p class="team-bio">
+                Estudiante de Ingeniería de Software, organizado, responsable y orientado a resultados. Apasionado por el aprendizaje continuo y la actualización constante en nuevas tecnologías y buenas prácticas.
+            </p>
+        </div>
+
+        <!-- Member 2: Alexis -->
+        <div class="team-card">
+            <div class="team-avatar-wrapper">
+                <img src="public/assets/images/team-alexis.png" alt="Martin Farro, Alexis Sebastian" />
+            </div>
+            <h3>Martin Farro, Alexis Sebastian</h3>
+            <p class="team-role">Software Engineering Student</p>
+            <p class="team-bio">
+                Estudiante de Ingeniería de Software. Disciplinado y constante, cualidades desarrolladas a través de la natación. Enfocado en resolver problemas de manera metódica y con atención al detalle.
+            </p>
+        </div>
+
+        <!-- Member 3: Eduardo -->
+        <div class="team-card">
+            <div class="team-avatar-wrapper">
+                <img src="public/assets/images/team-eduardo.jpg" alt="Osorio Ramírez, Eduardo Jesús" />
+            </div>
+            <h3>Osorio Ramírez, Eduardo Jesús</h3>
+            <p class="team-role">Software Engineering Student</p>
+            <p class="team-bio">
+                Estudiante de Ingeniería de Software. Busca desarrollar nuevas habilidades en inteligencia artificial, con conocimientos de C++, HTML, CSS, y código limpio.
+            </p>
+        </div>
+
+        <!-- Fila 2 -->
+        <!-- Member 4: Sebastian -->
+        <div class="team-card">
+            <div class="team-avatar-wrapper">
+                <img src="public/assets/images/team-sebastian.jpg" alt="Carbajal Santivañez, Sebastian Aaron" />
+            </div>
+            <h3>Carbajal Santivañez, Sebastian Aaron</h3>
+            <p class="team-role">Software Engineering Student</p>
+            <p class="team-bio">
+                Estudiante de Ingeniería de Software en la UPC, cursando el 8vo ciclo. Apasionado por el análisis de datos, Databases y diseño de interfaces UX eficientes. Conocimientos en Python, React, Node.js, MySQL, Swift, C# y C++.
+            </p>
+        </div>
+
+        <!-- Member 5: Marlon -->
+        <div class="team-card">
+            <div class="team-avatar-wrapper">
+                <img src="public/assets/images/team-marlon.jpg" alt="Viza Quispe, Marlon Packard" />
+            </div>
+            <h3>Viza Quispe, Marlon Packard</h3>
+            <p class="team-role">Software Engineering Student</p>
+            <p class="team-bio">
+                Estudiante responsable y proactivo con una sólida base técnica en C++. Destaca por su capacidad para aportar soluciones creativas y su compromiso con el aprendizaje continuo.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ================= Plans & Pricing Section ================= -->
+<section class="plans-section" id="plans">
+    <div class="plans-header">
+        <h2 data-i18n="plans.heading">A Plan for Your Wellbeing</h2>
+        <p data-i18n="plans.subtitle">Choose how you explore your sleep, strain and recovery.</p>
+    </div>
+
+    <!-- Toggle Pill -->
+    <div class="plan-toggle-container">
+        <button class="plan-toggle-btn active" data-plan="monthly" data-i18n="plans.monthly">Monthly</button>
+        <button class="plan-toggle-btn" data-plan="annual" data-i18n="plans.annual">Annual</button>
+    </div>
+
+    <div class="plans-grid">
+        <!-- Basic Plan -->
+        <div class="pricing-card pricing-card-basic">
+            <div class="pricing-card-header">
+                <h3 data-i18n="plans.basicTitle">Basic</h3>
+                <p class="pricing-sub" data-i18n="plans.basicSub">Your daily insights in one place</p>
+            </div>
+
+            <div class="pricing-price-wrap">
+                <div class="price-monthly">
+                    <span class="pricing-price" data-i18n="plans.basicPriceMonthly">$19</span>
+                    <span class="pricing-unit" data-i18n="plans.basicPriceMonthlyUnit">/per month</span>
+                </div>
+                <div class="price-annual" style="display: none;">
+                    <span class="pricing-price" data-i18n="plans.basicPriceAnnual">$180</span>
+                    <span class="pricing-unit" data-i18n="plans.basicPriceAnnualUnit">/per year</span>
+                    <div class="annual-save-badge" data-i18n="plans.save">Save 20% annually</div>
+                </div>
+            </div>
+
+            <div class="pricing-features-box">
+                <ul class="pricing-features-list">
+                    <li>
+                        <div class="pricing-check-icon"><i class="fas fa-check"></i></div>
+                        <span data-i18n="plans.basicF1">Health dashboard</span>
+                    </li>
+                    <li>
+                        <div class="pricing-check-icon"><i class="fas fa-check"></i></div>
+                        <span data-i18n="plans.basicF2">Daily summary</span>
+                    </li>
+                    <li>
+                        <div class="pricing-check-icon"><i class="fas fa-check"></i></div>
+                        <span data-i18n="plans.basicF3">Sleep tracking</span>
+                    </li>
+                    <li>
+                        <div class="pricing-check-icon"><i class="fas fa-check"></i></div>
+                        <span data-i18n="plans.basicF4">Your profile</span>
+                    </li>
+                    <li>
+                        <div class="pricing-check-icon"><i class="fas fa-check"></i></div>
+                        <span data-i18n="plans.basicF5">Help & support</span>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="btn-pricing btn-pricing-basic" data-i18n="plans.basicCta">Select Basic</button>
+        </div>
+
+        <!-- Pro Plan -->
+        <div class="pricing-card pricing-card-pro">
+            <div class="pro-badge" data-i18n="plans.proBadge">Advanced</div>
+
+            <div class="pricing-card-header">
+                <h3 data-i18n="plans.proTitle">Pro</h3>
+                <p class="pricing-sub" data-i18n="plans.proSub">Guidance tailored to your routine</p>
+            </div>
+
+            <div class="pricing-price-wrap">
+                <div class="price-monthly">
+                    <span class="pricing-price" data-i18n="plans.proPriceMonthly">$49</span>
+                    <span class="pricing-unit" data-i18n="plans.proPriceMonthlyUnit">/per month</span>
+                </div>
+                <div class="price-annual" style="display: none;">
+                    <span class="pricing-price" data-i18n="plans.proPriceAnnual">$470</span>
+                    <span class="pricing-unit" data-i18n="plans.proPriceAnnualUnit">/per year</span>
+                    <div class="annual-save-badge" data-i18n="plans.save">Save 20% annually</div>
+                </div>
+            </div>
+
+            <div class="pricing-features-box">
+                <ul class="pricing-features-list">
+                    <li>
+                        <div class="pricing-check-icon"><i class="fas fa-check"></i></div>
+                        <span data-i18n="plans.proF1">Everything in Basic</span>
+                    </li>
+                    <li>
+                        <div class="pricing-check-icon"><i class="fas fa-check"></i></div>
+                        <span data-i18n="plans.proF2">AI assistant</span>
+                    </li>
+                    <li>
+                        <div class="pricing-check-icon"><i class="fas fa-check"></i></div>
+                        <span data-i18n="plans.proF3">Progress reports</span>
+                    </li>
+                    <li>
+                        <div class="pricing-check-icon"><i class="fas fa-check"></i></div>
+                        <span data-i18n="plans.proF4">Personalized guidance</span>
+                    </li>
+                    <li>
+                        <div class="pricing-check-icon"><i class="fas fa-check"></i></div>
+                        <span data-i18n="plans.proF5">Extended history</span>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="btn-pricing btn-pricing-pro" data-i18n="plans.proCta">Choose Pro</button>
+        </div>
+    </div>
+</section>
+
+<!-- ================= Overview & Secondary Video Section ================= -->
+<section class="overview-section" id="about">
+    <div class="overview-grid">
+        <!-- Left Info -->
+        <div class="overview-left">
+            <h2 class="overview-title" data-i18n="overview.title">
+                PulsePower: Understand Your Body, Support Your Wellbeing
+            </h2>
+            <p class="overview-desc" data-i18n="overview.desc">
+                PulsePower is a physiological intelligence platform that interprets data from a connected wearable. It brings together sleep, strain and recovery information to offer clear explanations and personalized recommendations. Built for regular exercisers and people seeking better rest, it helps users understand their patterns and make everyday wellbeing decisions based on their history and goals.
+            </p>
+
+            <div class="overview-points">
+                <div class="overview-point-item">
+                    <i class="fas fa-circle-check overview-point-bullet"></i>
+                    <span data-i18n="overview.point1">Integrated monitoring: review your sleep, strain and recovery records in a single platform.</span>
+                </div>
+                <div class="overview-point-item">
+                    <i class="fas fa-circle-check overview-point-bullet"></i>
+                    <span data-i18n="overview.point2">Personalized guidance: connect your indicators to your goals and explore your data with an AI assistant.</span>
+                </div>
+                <div class="overview-point-item">
+                    <i class="fas fa-circle-check overview-point-bullet"></i>
+                    <span data-i18n="overview.point3">Habit tracking: review trends and reports to understand how your activity and rest evolve.</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Video -->
+        <div class="overview-right">
+            <div class="video-player-container video-placeholder">
+                <div class="youtube-play-link">
+                    <div class="youtube-play-btn">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <span class="youtube-play-text">Watch Video</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= Footer Section ================= -->
+<footer class="footer">
+    <div class="footer-top">
+        <div class="footer-brand">
+            <img src="public/assets/images/pulsepower-logo.png" alt="PulsePower Logo" />
+            <p data-i18n="footer.tagline">
+                PulsePower turns your sleep, strain and recovery records into clear insights to support your everyday wellbeing.
+            </p>
+        </div>
+
+        <div class="footer-social-links">
+            <a href="#" class="social-circle-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-circle-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-circle-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-circle-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+
+    <div class="footer-links-grid">
+        <div class="footer-col">
+            <h4 data-i18n="footer.servicesTitle">Services</h4>
+            <ul>
+                <li><a href="#services" data-i18n="footer.s1">Recovery insights</a></li>
+                <li><a href="#services" data-i18n="footer.s2">Sleep quality</a></li>
+                <li><a href="#services" data-i18n="footer.s3">Daily strain</a></li>
+                <li><a href="#features" data-i18n="footer.s4">AI assistant</a></li>
+                <li><a href="#features" data-i18n="footer.s5">Progress reports</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4 data-i18n="footer.resourcesTitle">Resources</h4>
+            <ul>
+                <li><a href="#about" data-i18n="footer.r1">Help center</a></li>
+                <li><a href="#steps" data-i18n="footer.r2">Getting started</a></li>
+                <li><a href="#plans" data-i18n="footer.r3">Available plans</a></li>
+                <li><a href="#about" data-i18n="footer.r4">FAQs</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4 data-i18n="footer.companyTitle">Company</h4>
+            <ul>
+                <li><a href="#team" data-i18n="footer.c1">Our team</a></li>
+                <li><a href="#about" data-i18n="footer.c2">Our mission</a></li>
+                <li><a href="mailto:support@pulsepower.io" data-i18n="footer.c3">Contact us</a></li>
+                <li><a href="#about" data-i18n="footer.c4">About the product</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p data-i18n="footer.copyright">© 2026 PulsePower. Academic project.</p>
+        <div class="footer-legal-links">
+            <a href="public/sections/tos.html" target="_blank" data-i18n="footer.terms">Terms of Service</a>
+            <a href="public/sections/policies.html" target="_blank" data-i18n="footer.privacy">Privacy Policy</a>
+        </div>
+    </div>
+</footer>
+
+<!-- ================= Floating Language Switcher ================= -->
+<div class="floating-lang-switcher">
+    <button class="floating-lang-btn" data-lang="en">EN</button>
+    <button class="floating-lang-btn active" data-lang="es">ES</button>
+</div>
+
+<!-- Scripts -->
+<script src="public/assets/scripts/translations/en.js"></script>
+<script src="public/assets/scripts/translations/es.js"></script>
+<script src="public/assets/scripts/main.js"></script>
+</body>
+</html>
+
