@@ -566,3 +566,118 @@ img, svg {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* ==========================================================================
+   Coaching Services Section
+   ========================================================================== */
+.services-section {
+  background: var(--color-lavender);
+  padding: 90px 24px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.services-left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.services-accordion-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.service-accordion-card {
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 22px 26px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+  border: 1.5px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.service-accordion-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.service-accordion-card.active {
+  border-color: var(--color-teal);
+  box-shadow: 0 8px 28px rgba(45, 212, 191, 0.2);
+}
+
+.service-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.service-card-header h3 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.service-arrow-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--color-teal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #101B35;
+  font-size: 14px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.service-accordion-card.active .service-arrow-btn {
+  transform: rotate(90deg);
+  background: #101B35;
+  color: var(--color-teal);
+}
+
+.service-card-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, margin-top 0.35s ease;
+}
+
+.service-accordion-card.active .service-card-body {
+  max-height: 160px;
+  margin-top: 14px;
+}
+
+.service-card-body p {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 15px;
+  color: #4A4A4A;
+  line-height: 1.55;
+}
+
+.services-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-right-img {
+  width: 100%;
+  max-width: 540px;
+  border-radius: 20px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.1);
+}
