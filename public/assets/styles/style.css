@@ -77,6 +77,7 @@ img, svg {
   margin: 0 auto;
   padding: 0 24px;
 }
+
 /* ==========================================================================
    Header & Navigation
    ========================================================================== */
@@ -165,6 +166,7 @@ img, svg {
   align-items: center;
   gap: 20px;
 }
+
 /* Language Toggle Switch (Figma Frame 21/22 style) */
 .navbar-lang-switch {
   display: flex;
@@ -250,6 +252,7 @@ img, svg {
   color: #FFFFFF;
   cursor: pointer;
 }
+
 /* ==========================================================================
    Hero Section
    ========================================================================== */
@@ -279,7 +282,8 @@ img, svg {
   z-index: 1;
 }
 
-/* Giant "HEALTH" Watermark */
+/* Giant "HEALTH" Watermark
+   (Antes 0.07 de opacidad = casi invisible. Sube o baja el 0.9 si lo quieres más suave) */
 .hero-watermark {
   position: absolute;
   width: 100%;
@@ -292,7 +296,7 @@ img, svg {
   line-height: 1;
   letter-spacing: clamp(10px, 2.5vw, 32px);
   text-transform: uppercase;
-  color: rgba(238, 238, 238, 0.07);
+  color: rgba(255, 255, 255, 0.16);
   user-select: none;
   pointer-events: none;
   z-index: 1;
@@ -314,6 +318,12 @@ img, svg {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.hero-tag,
+.hero-title,
+.hero-subtitle {
+  text-shadow: 0 2px 14px rgba(16, 27, 53, 0.9);
 }
 
 .hero-tag {
@@ -460,6 +470,7 @@ img, svg {
   padding: 4px 12px;
   border-radius: 20px;
 }
+
 /* ==========================================================================
    Ticker / Marquee Banner
    ========================================================================== */
@@ -681,6 +692,7 @@ img, svg {
   border-radius: 20px;
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.1);
 }
+
 /* ==========================================================================
    How PulsePower Works (5-Step Arched Cards)
    ========================================================================== */
@@ -877,6 +889,46 @@ img, svg {
   border: 0;
 }
 
+/* Placeholder de video con botón estilo YouTube */
+.youtube-play-link {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  background: #0B132B;
+}
+
+.youtube-play-btn {
+  width: 96px;
+  height: 68px;
+  background: #FF0000;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(255, 0, 0, 0.35);
+  transition: transform 0.2s ease;
+}
+
+.youtube-play-btn i {
+  color: #FFFFFF;
+  font-size: 30px;
+  margin-left: 4px; /* centra visualmente el triángulo */
+}
+
+.youtube-play-link:hover .youtube-play-btn {
+  transform: scale(1.1);
+}
+
+.youtube-play-text {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+  color: #CBD5E1;
+}
+
 .video-tabs-list {
   display: flex;
   flex-direction: column;
@@ -935,6 +987,7 @@ img, svg {
   font-size: 15px;
   color: #E2E8F0;
 }
+
 /* ==========================================================================
    Our Team Section
    ========================================================================== */
@@ -970,15 +1023,19 @@ img, svg {
   border-radius: 2px;
 }
 
+/* 3 tarjetas arriba, 2 centradas abajo, todas del mismo ancho */
 .team-cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 32px;
   max-width: 1240px;
   margin: 0 auto;
 }
 
 .team-card {
+  flex: 0 1 calc((100% - 64px) / 3);
+  max-width: 400px;
   background: #FFFFFF;
   border: 1px solid #414141;
   border-radius: 36px;
@@ -1006,12 +1063,14 @@ img, svg {
   overflow: hidden;
   margin-bottom: 8px;
   background: #F8FAFC;
+  flex-shrink: 0;
 }
 
 .team-avatar-wrapper img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 20%; /* enfoca las caras */
 }
 
 .team-card h3 {
@@ -1036,6 +1095,7 @@ img, svg {
   line-height: 1.55;
   color: rgba(43, 43, 43, 0.85);
 }
+
 /* ==========================================================================
    Plans & Pricing Section
    ========================================================================== */
@@ -1282,6 +1342,7 @@ img, svg {
 .btn-pricing-pro:hover {
   background: #14B8A6;
 }
+
 /* ==========================================================================
    Overview & Secondary Video Section
    ========================================================================== */
@@ -1377,6 +1438,14 @@ img, svg {
   font-size: 15px;
   color: #94A3B8;
   line-height: 1.55;
+}
+
+/* Logo del footer: sin estirarse */
+.footer-brand img {
+  align-self: flex-start;
+  height: 48px;
+  width: auto;
+  object-fit: contain;
 }
 
 .footer-social-links {
@@ -1501,7 +1570,6 @@ img, svg {
   color: #FFFFFF;
 }
 
-
 /* ==========================================================================
    Legal Pages (TOS & Privacy)
    ========================================================================== */
@@ -1564,7 +1632,6 @@ img, svg {
   color: #334155;
 }
 
-
 /* ==========================================================================
    Responsive Breakpoints
    ========================================================================== */
@@ -1585,6 +1652,12 @@ img, svg {
   }
   .services-grid, .video-grid, .overview-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1000px) {
+  .team-card {
+    flex-basis: calc((100% - 32px) / 2);
   }
 }
 
@@ -1621,6 +1694,12 @@ img, svg {
   }
 }
 
+@media (max-width: 640px) {
+  .team-card {
+    flex-basis: 100%;
+  }
+}
+
 @media (max-width: 600px) {
   .hero-watermark {
     display: none;
@@ -1631,87 +1710,4 @@ img, svg {
   .nav-actions .btn-login {
     display: none;
   }
-}
-
-
-/* ==========================================================================
-   YouTube Video Placeholder
-   ========================================================================== */
-.video-placeholder {
-  background: linear-gradient(145deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%) !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  min-height: 400px;
-  border-radius: 16px !important;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  position: relative;
-  overflow: hidden;
-}
-
-.video-placeholder::before {
-  content: '';
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  background: radial-gradient(circle, rgba(255, 0, 0, 0.08) 0%, transparent 70%);
-  border-radius: 50%;
-  pointer-events: none;
-}
-
-.youtube-play-link {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  text-decoration: none;
-  z-index: 2;
-}
-
-.youtube-play-btn {
-  width: 90px;
-  height: 90px;
-  background: rgba(255, 255, 255, 0.06);
-  border: 2px solid rgba(255, 255, 255, 0.12);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.35s ease;
-}
-
-.youtube-play-btn i {
-  font-size: 48px;
-  color: #FF0000;
-  transition: all 0.35s ease;
-}
-
-.youtube-play-link:hover .youtube-play-btn {
-  background: rgba(255, 0, 0, 0.12);
-  border-color: rgba(255, 0, 0, 0.4);
-  transform: scale(1.12);
-  box-shadow: 0 0 40px rgba(255, 0, 0, 0.2);
-}
-
-.youtube-play-link:hover .youtube-play-btn i {
-  transform: scale(1.1);
-}
-
-.youtube-play-text {
-  font-family: 'Work Sans', sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.5);
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  transition: color 0.3s ease;
-}
-
-.youtube-play-link:hover .youtube-play-text {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-/* Hero athlete PNG support */
-.hero-athlete-img {
-  object-fit: contain;
 }
