@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 700" fill="none">
+  <!-- Glowing ambient light around athlete -->
+  <circle cx="250" cy="320" r="180" fill="#2DD4BF" fill-opacity="0.12" filter="blur(40px)"/>
+  <circle cx="250" cy="280" r="120" fill="#FFFFFF" fill-opacity="0.08" filter="blur(30px)"/>
+
+  <!-- Dynamic energy arcs -->
+  <path d="M120 450C160 520 340 540 400 440" stroke="#2DD4BF" stroke-width="3" stroke-linecap="round" stroke-dasharray="8 8" stroke-opacity="0.7"/>
+  <path d="M100 280C140 160 360 150 410 260" stroke="#2DD4BF" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6" stroke-opacity="0.5"/>
+
+  <!-- Stylized jumping female athlete silhouette / illustration -->
+  <!-- Hair curls & head -->
+  <path d="M225 150C210 130 220 100 245 95C270 90 285 105 285 125C295 115 310 120 310 135C310 155 295 170 280 170C270 170 260 175 250 175C235 175 220 165 225 150Z" fill="#78350F"/>
+  <circle cx="252" cy="142" r="22" fill="#D97706" fill-opacity="0.6"/>
+  <path d="M242 160C246 166 256 166 260 160" stroke="#78350F" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Arms raised high in victory/jump -->
+  <!-- Left Arm -->
+  <path d="M232 175L180 120L195 95L240 160" fill="#B45309"/>
+  <!-- Left Hand / Fist -->
+  <circle cx="195" cy="95" r="12" fill="#D97706"/>
+  <!-- Right Arm -->
+  <path d="M272 175L325 120L310 95L265 160" fill="#B45309"/>
+  <!-- Right Hand / Fist -->
+  <circle cx="310" cy="95" r="12" fill="#D97706"/>
+
+  <!-- Sports Top (Black athletic gear) -->
+  <path d="M235 170L220 230L282 230L268 170Z" fill="#0F172A"/>
+  <!-- Sports Bra straps -->
+  <path d="M235 170L245 195M268 170L258 195" stroke="#2DD4BF" stroke-width="3"/>
+  <!-- Midriff -->
+  <path d="M222 230L225 270L278 270L280 230Z" fill="#D97706" fill-opacity="0.75"/>
+  <!-- Defined abs lines -->
+  <line x1="251" y1="234" x2="251" y2="266" stroke="#92400E" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Black Leggings / Athletic Shorts -->
+  <path d="M225 270L215 320L288 320L278 270Z" fill="#0F172A"/>
+
+  <!-- Jumping Legs (bent dynamically mid-air) -->
+  <!-- Left Leg -->
+  <path d="M220 320L180 390L190 470L215 470L210 400L245 330Z" fill="#1E293B"/>
+  <!-- Left Sneaker (Teal & White) -->
+  <path d="M185 470L170 495L220 495L220 470Z" fill="#2DD4BF"/>
+  <rect x="170" y="490" width="50" height="6" rx="3" fill="#FFFFFF"/>
+
+  <!-- Right Leg (tucked jump) -->
+  <path d="M280 320L325 385L315 465L290 465L295 395L255 330Z" fill="#1E293B"/>
+  <!-- Right Sneaker -->
+  <path d="M315 465L330 490L280 490L285 465Z" fill="#2DD4BF"/>
+  <rect x="280" y="485" width="50" height="6" rx="3" fill="#FFFFFF"/>
+
+  <!-- Floating biometric telemetry rings around wrist -->
+  <circle cx="195" cy="95" r="18" stroke="#2DD4BF" stroke-width="2" stroke-dasharray="3 3"/>
+  <circle cx="310" cy="95" r="18" stroke="#2DD4BF" stroke-width="2" stroke-dasharray="3 3"/>
+
+  <!-- Strain / Recovery aura -->
+  <text x="130" y="240" font-family="'Work Sans', sans-serif" font-size="11" font-weight="700" fill="#2DD4BF" letter-spacing="1">STRAIN 17.8</text>
+  <text x="310" y="240" font-family="'Work Sans', sans-serif" font-size="11" font-weight="700" fill="#38BDF8" letter-spacing="1">RECOVERY 94%</text>
+</svg>

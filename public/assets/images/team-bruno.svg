@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none">
+  <defs>
+    <linearGradient id="brunoGrad" x1="0" y1="0" x2="160" y2="160" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" fill-color="#818CF8" stop-color="#818CF8"/>
+      <stop offset="100%" fill-color="#4338CA" stop-color="#4338CA"/>
+    </linearGradient>
+  </defs>
+  <circle cx="80" cy="80" r="76" fill="url(#brunoGrad)"/>
+  <circle cx="80" cy="62" r="28" fill="#F8FAFC"/>
+  <!-- Hair short modern -->
+  <path d="M54 54C54 36 66 32 80 32C94 32 106 36 106 54C98 48 90 46 80 46C70 46 62 48 54 54Z" fill="#1E1B4B"/>
+  <!-- Body -->
+  <path d="M30 142C30 114 52 102 80 102C108 102 130 114 130 142H30Z" fill="#312E81"/>
+  <!-- Collar -->
+  <polygon points="80,116 72,102 88,102" fill="#E0E7FF"/>
+  <!-- Smile -->
+  <path d="M72 74C76 77 84 77 88 74" stroke="#334155" stroke-width="2" stroke-linecap="round"/>
+</svg>

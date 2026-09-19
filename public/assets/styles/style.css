@@ -1,0 +1,79 @@
+/* ==========================================================================
+   PulsePower - Official Landing Page Stylesheet
+   Designed with Figma CSS specifications, high-performance responsive layout
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800;900&family=Poppins:wght@400;500;600;700&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Work+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  --color-hero-bg: #101B35;
+  --color-teal: #2DD4BF;
+  --color-teal-hover: #14B8A6;
+  --color-lavender: #EDE9FE;
+  --color-dark-text: #202020;
+  --color-body-text: #4A4A4A;
+  --color-muted: #64748B;
+  --color-border: rgba(0, 0, 0, 0.12);
+  --color-white: #FFFFFF;
+  --color-accent-lime: #E9FE67;
+  --color-amber: #F59E0B;
+
+  --step-pink: #FB7FDF;
+  --step-blue: #5CAAEA;
+  --step-coral: #E99191;
+  --step-teal: #2DD4BF;
+  --step-amber: #EDB55E;
+}
+
+/* Reset & Base */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  color: var(--color-dark-text);
+  background-color: var(--color-white);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.25s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+  transition: all 0.25s ease;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" fill="none">
+  <!-- Soft backdrop -->
+  <rect x="20" y="20" width="200" height="160" rx="20" fill="#FFF5FA"/>
+  <circle cx="120" cy="100" r="60" fill="#FB7FDF" fill-opacity="0.15"/>
+  
+  <!-- Target / Goal board -->
+  <circle cx="120" cy="95" r="45" stroke="#FB7FDF" stroke-width="3" stroke-dasharray="4 4"/>
+  <circle cx="120" cy="95" r="32" fill="#FFFFFF" stroke="#FB7FDF" stroke-width="2.5"/>
+  <circle cx="120" cy="95" r="18" fill="#FB7FDF" fill-opacity="0.25"/>
+  <circle cx="120" cy="95" r="8" fill="#E23CA8"/>
+  
+  <!-- Dart / Arrow entering center -->
+  <path d="M165 50L125 90" stroke="#2DD4BF" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M125 90L135 80" stroke="#2DD4BF" stroke-width="3" stroke-linecap="round"/>
+  <path d="M125 90L135 100" stroke="#2DD4BF" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="165,50 175,45 170,60" fill="#2DD4BF"/>
+
+  <!-- Checklist icon -->
+  <rect x="42" y="115" width="48" height="42" rx="8" fill="#FFFFFF" stroke="#FB7FDF" stroke-width="1.5" filter="drop-shadow(0px 2px 4px rgba(0,0,0,0.05))"/>
+  <line x1="52" y1="126" x2="78" y2="126" stroke="#FB7FDF" stroke-width="2" stroke-linecap="round"/>
+  <line x1="52" y1="134" x2="74" y2="134" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round"/>
+  <line x1="52" y1="142" x2="68" y2="142" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="48" cy="126" r="2" fill="#E23CA8"/>
+  <circle cx="48" cy="134" r="2" fill="#E23CA8"/>
+  <circle cx="48" cy="142" r="2" fill="#E23CA8"/>
+
+  <!-- Sparkles -->
+  <path d="M185 130L188 138L196 141L188 144L185 152L182 144L174 141L182 138Z" fill="#FB7FDF"/>
+  <circle cx="70" cy="55" r="4" fill="#FB7FDF"/>
+</svg>

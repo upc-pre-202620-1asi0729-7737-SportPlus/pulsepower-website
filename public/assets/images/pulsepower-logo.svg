@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 64" fill="none">
+  <g transform="translate(4, 8)">
+    <rect x="0" y="2" width="44" height="44" rx="12" fill="#152347" stroke="#2DD4BF" stroke-width="1.5" stroke-opacity="0.4"/>
+    <path d="M14 36V12H26C31.5 12 34.5 15.5 34.5 20C34.5 24.5 31.5 28 26 28H14" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M6 25H16L19 19L23 32L27 22L30 27H40" stroke="#2DD4BF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="58" y="38" font-family="'Audiowide', 'Montserrat', sans-serif" font-size="24" font-weight="700" letter-spacing="1">
+    <tspan fill="#FFFFFF">Pulse</tspan><tspan fill="#2DD4BF">Power</tspan>
+  </text>
+  <text x="59" y="49" font-family="'Work Sans', sans-serif" font-size="9" font-weight="600" fill="#94A3B8" letter-spacing="2.5">PHYSIOLOGICAL INTELLIGENCE</text>
+</svg>

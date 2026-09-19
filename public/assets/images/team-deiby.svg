@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none">
+  <defs>
+    <linearGradient id="deibyGrad" x1="0" y1="0" x2="160" y2="160" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+  </defs>
+  <circle cx="80" cy="80" r="76" fill="url(#deibyGrad)"/>
+  <circle cx="80" cy="62" r="28" fill="#FFFBEB"/>
+  <!-- Hair wavy -->
+  <path d="M50 56C50 36 64 28 80 28C96 28 110 36 110 56C102 46 92 44 80 44C68 44 58 46 50 56Z" fill="#292524"/>
+  <!-- Body -->
+  <path d="M30 142C30 114 52 102 80 102C108 102 130 114 130 142H30Z" fill="#451A03"/>
+  <!-- Collar -->
+  <polygon points="80,116 72,102 88,102" fill="#FEF3C7"/>
+  <!-- Confident smile -->
+  <path d="M72 73C76 76 84 76 88 73" stroke="#44403C" stroke-width="2" stroke-linecap="round"/>
+</svg>

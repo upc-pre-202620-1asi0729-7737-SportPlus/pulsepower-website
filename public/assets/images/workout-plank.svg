@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" fill="none">
+  <!-- Modern living room / studio background -->
+  <rect width="600" height="450" rx="20" fill="#F8FAFC"/>
+  <!-- Floor line -->
+  <rect y="330" width="600" height="120" rx="0" fill="#F1F5F9"/>
+  <!-- Workout Yoga mat in vibrant teal -->
+  <rect x="60" y="340" width="480" height="30" rx="10" fill="#2DD4BF" fill-opacity="0.85"/>
+  <rect x="65" y="345" width="470" height="20" rx="6" fill="#14B8A6"/>
+
+  <!-- Warm ambient light & plant in background -->
+  <circle cx="500" cy="180" r="90" fill="#EDE9FE" fill-opacity="0.6"/>
+  <!-- Plant pot -->
+  <rect x="490" y="270" width="40" height="60" rx="8" fill="#CBD5E1"/>
+  <path d="M510 270Q470 200 450 170Q490 200 510 270Z" fill="#10B981"/>
+  <path d="M510 270Q540 180 560 150Q530 190 510 270Z" fill="#059669"/>
+  <path d="M510 270Q500 160 490 130Q515 170 510 270Z" fill="#34D399"/>
+
+  <!-- Female Athlete performing plank / push-up pose -->
+  <!-- Head & ponytail -->
+  <circle cx="180" cy="220" r="22" fill="#FED7AA"/>
+  <path d="M165 215C165 195 180 190 195 195C205 200 210 215 205 230C195 230 185 228 175 225Z" fill="#3E2723"/>
+  <path d="M205 210C225 215 235 230 230 240C220 240 212 230 205 220Z" fill="#3E2723"/>
+  <path d="M170 228C174 232 182 232 186 228" stroke="#78350F" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Athletic Blue Sports Top -->
+  <path d="M200 235L290 255L285 285L195 265Z" fill="#2563EB"/>
+  
+  <!-- Arms grounded on mat (forearm plank) -->
+  <path d="M198 250L190 320L170 345L150 345" stroke="#FED7AA" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Wristband wearable glowing -->
+  <rect x="160" y="332" width="10" height="12" rx="3" fill="#0F172A"/>
+  <circle cx="165" cy="338" r="2" fill="#2DD4BF"/>
+
+  <!-- Core & Hips -->
+  <path d="M285 255L370 275L365 300L280 285Z" fill="#1D4ED8"/>
+  
+  <!-- Legs straight back in perfect form (Navy athletic tights) -->
+  <path d="M365 275L470 310L465 330L360 300Z" fill="#1E293B"/>
+  <!-- Feet resting on toes on mat -->
+  <path d="M470 310L485 340L470 348L455 330Z" fill="#0F172A"/>
+  <!-- White sneaker sole -->
+  <rect x="475" y="342" width="20" height="6" rx="3" fill="#2DD4BF"/>
+
+  <!-- Telemetry overlay badge floating above athlete -->
+  <g transform="translate(180, 80)">
+    <rect width="180" height="52" rx="12" fill="#0F172A" fill-opacity="0.95" stroke="#2DD4BF" stroke-width="1.5" filter="drop-shadow(0 8px 16px rgba(0,0,0,0.15))"/>
+    <circle cx="28" cy="26" r="14" fill="#2DD4BF" fill-opacity="0.2"/>
+    <path d="M20 26H24L26 21L29 31L32 23L34 26H38" stroke="#2DD4BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="50" y="24" font-family="'Rubik', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">Posture & Form</text>
+    <text x="50" y="38" font-family="'Work Sans', sans-serif" font-size="10" font-weight="600" fill="#2DD4BF">OPTIMAL ALIGNMENT</text>
+  </g>
+</svg>

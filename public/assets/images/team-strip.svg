@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 240" fill="none">
+  <!-- 7 coaches/experts in clean white/dark athletic tees -->
+  <!-- Coach 1 (Female) -->
+  <g transform="translate(40, 20)">
+    <circle cx="50" cy="50" r="46" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="2"/>
+    <circle cx="50" cy="42" r="22" fill="#FCD34D" fill-opacity="0.5"/>
+    <path d="M28 45C28 25 40 18 50 18C60 18 72 25 72 45C65 35 58 34 50 34C42 34 35 35 28 45Z" fill="#78350F"/>
+    <path d="M16 110C16 85 30 75 50 75C70 75 84 85 84 110H16Z" fill="#1E293B"/>
+    <text x="50" y="130" font-family="'Poppins', sans-serif" font-size="11" font-weight="600" fill="#334155" text-anchor="middle">Dr. Camila R.</text>
+    <text x="50" y="144" font-family="'Work Sans', sans-serif" font-size="9" fill="#64748B" text-anchor="middle">Physiologist</text>
+  </g>
+
+  <!-- Coach 2 (Female) -->
+  <g transform="translate(170, 20)">
+    <circle cx="50" cy="50" r="46" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="2"/>
+    <circle cx="50" cy="42" r="22" fill="#FED7AA" fill-opacity="0.6"/>
+    <path d="M26 50C26 26 38 18 50 18C62 18 74 26 74 50C66 40 58 38 50 38C42 38 34 40 26 50Z" fill="#0F172A"/>
+    <path d="M16 110C16 85 30 75 50 75C70 75 84 85 84 110H16Z" fill="#1E293B"/>
+    <text x="50" y="130" font-family="'Poppins', sans-serif" font-size="11" font-weight="600" fill="#334155" text-anchor="middle">Elena Torres</text>
+    <text x="50" y="144" font-family="'Work Sans', sans-serif" font-size="9" fill="#64748B" text-anchor="middle">Nutritionist</text>
+  </g>
+
+  <!-- Coach 3 (Male) -->
+  <g transform="translate(300, 20)">
+    <circle cx="50" cy="50" r="46" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="2"/>
+    <circle cx="50" cy="42" r="22" fill="#FED7AA" fill-opacity="0.5"/>
+    <path d="M28 38C28 22 38 16 50 16C62 16 72 22 72 38C65 30 58 28 50 28C42 28 35 30 28 38Z" fill="#334155"/>
+    <path d="M16 110C16 85 30 75 50 75C70 75 84 85 84 110H16Z" fill="#1E293B"/>
+    <text x="50" y="130" font-family="'Poppins', sans-serif" font-size="11" font-weight="600" fill="#334155" text-anchor="middle">Mark Vance</text>
+    <text x="50" y="144" font-family="'Work Sans', sans-serif" font-size="9" fill="#64748B" text-anchor="middle">Strength Coach</text>
+  </g>
+
+  <!-- Coach 4 (Head Lead - Center) -->
+  <g transform="translate(435, 10)">
+    <circle cx="65" cy="65" r="60" fill="#E2E8F0" stroke="#2DD4BF" stroke-width="3.5" filter="drop-shadow(0 4px 10px rgba(45,212,191,0.25))"/>
+    <circle cx="65" cy="54" r="28" fill="#FCD34D" fill-opacity="0.4"/>
+    <path d="M38 48C38 28 50 22 65 22C80 22 92 28 92 48C84 38 74 36 65 36C56 36 46 38 38 48Z" fill="#0F172A"/>
+    <path d="M24 135C24 105 42 92 65 92C88 92 106 105 106 135H24Z" fill="#0F172A"/>
+    <rect x="52" y="105" width="26" height="12" rx="4" fill="#2DD4BF"/>
+    <text x="65" y="152" font-family="'Poppins', sans-serif" font-size="13" font-weight="700" fill="#0F172A" text-anchor="middle">David Brooks</text>
+    <text x="65" y="168" font-family="'Work Sans', sans-serif" font-size="10" font-weight="600" fill="#0D9488" text-anchor="middle">Head Coach</text>
+  </g>
+
+  <!-- Coach 5 (Male) -->
+  <g transform="translate(600, 20)">
+    <circle cx="50" cy="50" r="46" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="2"/>
+    <circle cx="50" cy="42" r="22" fill="#FED7AA" fill-opacity="0.5"/>
+    <path d="M28 36C28 20 40 16 50 16C60 16 72 20 72 36C65 28 58 26 50 26C42 26 35 28 28 36Z" fill="#475569"/>
+    <path d="M16 110C16 85 30 75 50 75C70 75 84 85 84 110H16Z" fill="#1E293B"/>
+    <text x="50" y="130" font-family="'Poppins', sans-serif" font-size="11" font-weight="600" fill="#334155" text-anchor="middle">Lucas Meyer</text>
+    <text x="50" y="144" font-family="'Work Sans', sans-serif" font-size="9" fill="#64748B" text-anchor="middle">Hormone Specialist</text>
+  </g>
+
+  <!-- Coach 6 (Female) -->
+  <g transform="translate(730, 20)">
+    <circle cx="50" cy="50" r="46" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="2"/>
+    <circle cx="50" cy="42" r="22" fill="#FED7AA" fill-opacity="0.5"/>
+    <path d="M26 48C26 26 38 18 50 18C62 18 74 26 74 48C66 38 58 36 50 36C42 36 34 38 26 48Z" fill="#1E293B"/>
+    <path d="M16 110C16 85 30 75 50 75C70 75 84 85 84 110H16Z" fill="#1E293B"/>
+    <text x="50" y="130" font-family="'Poppins', sans-serif" font-size="11" font-weight="600" fill="#334155" text-anchor="middle">Sofia Lin</text>
+    <text x="50" y="144" font-family="'Work Sans', sans-serif" font-size="9" fill="#64748B" text-anchor="middle">Recovery Specialist</text>
+  </g>
+
+  <!-- Coach 7 (Male) -->
+  <g transform="translate(860, 20)">
+    <circle cx="50" cy="50" r="46" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="2"/>
+    <circle cx="50" cy="42" r="22" fill="#FED7AA" fill-opacity="0.6"/>
+    <path d="M28 36C28 20 40 16 50 16C60 16 72 20 72 36C65 28 58 26 50 26C42 26 35 28 28 36Z" fill="#0F172A"/>
+    <path d="M16 110C16 85 30 75 50 75C70 75 84 85 84 110H16Z" fill="#1E293B"/>
+    <text x="50" y="130" font-family="'Poppins', sans-serif" font-size="11" font-weight="600" fill="#334155" text-anchor="middle">Arjun Patel</text>
+    <text x="50" y="144" font-family="'Work Sans', sans-serif" font-size="9" fill="#64748B" text-anchor="middle">Biomechanics</text>
+  </g>
+</svg>
