@@ -787,3 +787,42 @@ img, svg {
   color: var(--color-body-text);
   line-height: 1.55;
 }
+
+/* ==========================================================================
+   Mid CTA Banner
+   ========================================================================== */
+.cta-banner-section {
+  padding: 40px 24px 80px;
+  background: #FFFFFF;
+}
+
+.cta-banner-box {
+  background: var(--color-lavender);
+  border-radius: 28px;
+  padding: 60px 36px;
+  max-width: 1240px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.cta-banner-box h2 {
+  font-family: 'Rubik', sans-serif;
+  font-size: clamp(28px, 3.6vw, 44px);
+  font-weight: 700;
+  color: #000000;
+}
+
+.cta-banner-box p {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  color: #202020;
+  max-width: 760px;
+  line-height: 1.6;
+}
