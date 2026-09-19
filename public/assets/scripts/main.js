@@ -111,3 +111,29 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    // Floating Language Switcher
+    document.querySelectorAll('.floating-lang-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            currentLang = btn.dataset.lang;
+            localStorage.setItem('pulsepower-lang', currentLang);
+            applyTranslations(currentLang);
+        });
+    });
+
+    // Mobile Navigation Menu Toggle
+    var menuBtn = document.getElementById('menu-btn');
+    var navbar = document.querySelector('.header .nav-links');
+    if (menuBtn && navbar) {
+        menuBtn.addEventListener('click', function () {
+            navbar.classList.toggle('active');
+            menuBtn.classList.toggle('fa-times');
+        });
+
+        navbar.querySelectorAll('a').forEach(function (link) {
+            link.addEventListener('click', function () {
+                navbar.classList.remove('active');
+                menuBtn.classList.remove('fa-times');
+            });
+        });
+    }
+
