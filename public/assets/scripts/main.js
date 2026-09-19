@@ -62,3 +62,23 @@ function applyTranslations(lang) {
         }
     });
 
+    // Synchronize Navbar toggle
+    var navSwitch = document.querySelector('.navbar-lang-switch');
+    if (navSwitch) {
+        var enOption = navSwitch.querySelector('.lang-opt[data-lang="en"]');
+        var esOption = navSwitch.querySelector('.lang-opt[data-lang="es"]');
+        var thumb = navSwitch.querySelector('.switch-thumb');
+
+        if (enOption && esOption) {
+            enOption.classList.toggle('active', lang === 'en');
+            esOption.classList.toggle('active', lang === 'es');
+        }
+        if (thumb) {
+            if (lang === 'es') {
+                thumb.style.transform = 'translateX(28px)';
+            } else {
+                thumb.style.transform = 'translateX(0px)';
+            }
+        }
+    }
+
