@@ -46,3 +46,19 @@ function applyTranslations(lang) {
         }
     });
 
+    // Apply to [data-i18n-placeholder]
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(function (el) {
+        var key = el.getAttribute('data-i18n-placeholder');
+        if (flat[key] !== undefined) {
+            el.placeholder = flat[key];
+        }
+    });
+
+    // Apply to [data-i18n-html]
+    document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
+        var key = el.getAttribute('data-i18n-html');
+        if (flat[key] !== undefined) {
+            el.innerHTML = flat[key];
+        }
+    });
+
