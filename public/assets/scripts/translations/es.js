@@ -119,3 +119,33 @@
         proF4: "Personalized guidance",
         proF5: "Extended history"
     },
+    overview: {
+        title: "PulsePower: Understand Your Body, Support Your Wellbeing",
+        desc: "PulsePower is a physiological intelligence platform that interprets data from a connected wearable. It brings together sleep, strain and recovery information to offer clear explanations and personalized recommendations. Built for regular exercisers and people seeking better rest, it helps users understand their patterns and make everyday wellbeing decisions based on their history and goals.",
+        point1: "Integrated monitoring: review your sleep, strain and recovery records in a single platform.",
+        point2: "Personalized guidance: connect your indicators to your goals and explore your data with an AI assistant.",
+        point3: "Habit tracking: review trends and reports to understand how your activity and rest evolve."
+    },
+    footer: {
+        tagline: "PulsePower turns your sleep, strain and recovery records into clear insights to support your everyday wellbeing.",
+        servicesTitle: "Services",
+        s1: "Recovery insights",
+        s2: "Sleep quality",
+        s3: "Daily strain",
+        s4: "AI assistant",
+        s5: "Progress reports",
+        resourcesTitle: "Resources",
+        r1: "Help center",
+        r2: "Getting started",
+        r3: "Available plans",
+        r4: "FAQs",
+        companyTitle: "Company",
+        c1: "Our team",
+        c2: "Our mission",
+        c3: "Contact us",
+        c4: "About the product",
+        copyright: "© 2026 PulsePower. Academic project.",
+        terms: "Terms of Service",
+        privacy: "Privacy Policy"
+    }
+};
