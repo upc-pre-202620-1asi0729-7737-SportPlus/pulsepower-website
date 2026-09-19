@@ -1563,3 +1563,72 @@ img, svg {
   margin-bottom: 8px;
   color: #334155;
 }
+
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+@media (max-width: 1080px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 40px;
+  }
+  .hero-left {
+    align-items: center;
+  }
+  .hero-subtitle {
+    max-width: 100%;
+  }
+  .hero-right {
+    justify-content: center;
+  }
+  .services-grid, .video-grid, .overview-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 860px) {
+  #menu-btn {
+    display: block;
+  }
+  .nav-links {
+    position: fixed;
+    top: 85px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 85px);
+    background: var(--color-hero-bg);
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 40px;
+    gap: 28px;
+    transition: left 0.3s ease;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .nav-links.active {
+    left: 0;
+  }
+  .nav-links a {
+    font-size: 18px;
+  }
+  .marquee-content {
+    justify-content: center;
+  }
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-watermark {
+    display: none;
+  }
+  .navbar-lang-switch {
+    display: none;
+  }
+  .nav-actions .btn-login {
+    display: none;
+  }
+}
