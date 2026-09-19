@@ -120,3 +120,33 @@
         proF4: "Guía y recomendaciones a medida",
         proF5: "Historial longitudinal extendido"
     },
+    overview: {
+        title: "PulsePower: Comprende tu Cuerpo, Respalda tu Bienestar",
+        desc: "PulsePower es una plataforma de inteligencia fisiológica que interpreta datos de dispositivos wearables conectados. Integra información de sueño, esfuerzo y recuperación para ofrecer explicaciones claras y recomendaciones personalizadas. Diseñada para deportistas habituales y personas que buscan un mejor descanso, ayuda a comprender patrones y tomar decisiones cotidianas de bienestar basadas en su historial y metas.",
+        point1: "Monitoreo integrado: revisa tus registros de sueño, esfuerzo y recuperación en una sola plataforma.",
+        point2: "Orientación personalizada: conecta tus indicadores con tus objetivos y explora tus datos con un asistente de IA.",
+        point3: "Seguimiento de hábitos: revisa tendencias e informes para comprender cómo evolucionan tu actividad y descanso."
+    },
+    footer: {
+        tagline: "PulsePower transforma tus registros de sueño, esfuerzo y recuperación en perspectivas claras para respaldar tu bienestar diario.",
+        servicesTitle: "Servicios",
+        s1: "Perspectivas de recuperación",
+        s2: "Calidad del sueño",
+        s3: "Esfuerzo diario",
+        s4: "Asistente de IA",
+        s5: "Informes de progreso",
+        resourcesTitle: "Recursos",
+        r1: "Centro de ayuda",
+        r2: "Primeros pasos",
+        r3: "Planes disponibles",
+        r4: "Preguntas frecuentes",
+        companyTitle: "Compañía",
+        c1: "Nuestro equipo",
+        c2: "Nuestra misión",
+        c3: "Contáctanos",
+        c4: "Acerca del producto",
+        copyright: "© 2026 PulsePower. Proyecto académico.",
+        terms: "Términos de Servicio",
+        privacy: "Política de Privacidad"
+    }
+};
