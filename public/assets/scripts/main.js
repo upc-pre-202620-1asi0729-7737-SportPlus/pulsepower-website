@@ -147,3 +147,23 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    // Coaching Services Accordion
+    var serviceCards = document.querySelectorAll('.service-accordion-card');
+    serviceCards.forEach(function (card) {
+        card.addEventListener('click', function () {
+            var isAlreadyActive = card.classList.contains('active');
+            serviceCards.forEach(function (c) { c.classList.remove('active'); });
+            if (!isAlreadyActive) {
+                card.classList.add('active');
+            }
+        });
+    });
+    // Default first active
+    if (serviceCards.length > 0) {
+        serviceCards[0].classList.add('active');
+    }
+
+    // Video Section Tabs
+    var videoTabs = document.querySelectorAll('.video-feature-tab');
+    var videoTabContent = document.getElementById('video-feature-desc');
+    var videoIframe = document.getElementById('pulsepower-video-frame');
