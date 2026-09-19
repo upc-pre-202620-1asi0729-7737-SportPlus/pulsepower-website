@@ -1469,3 +1469,35 @@ img, svg {
 .footer-legal-links a:hover {
   color: #FFFFFF;
 }
+
+/* ==========================================================================
+   Floating Language Switcher
+   ========================================================================== */
+.floating-lang-switcher {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 999;
+  background: #FFFFFF;
+  border: 1px solid #CBD5E1;
+  border-radius: 50px;
+  padding: 4px;
+  display: flex;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.floating-lang-btn {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 40px;
+  color: #475569;
+  transition: all 0.2s ease;
+}
+
+.floating-lang-btn.active {
+  background: var(--color-hero-bg);
+  color: #FFFFFF;
+}
+
