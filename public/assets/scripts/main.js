@@ -199,3 +199,21 @@ document.addEventListener('DOMContentLoaded', function () {
     var annualPrices = document.querySelectorAll('.price-annual');
     var saveBadges = document.querySelectorAll('.annual-save-badge');
 
+    planToggles.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            planToggles.forEach(function (b) { b.classList.remove('active'); });
+            btn.classList.add('active');
+
+            var mode = btn.dataset.plan;
+            if (mode === 'monthly') {
+                monthlyPrices.forEach(function (el) { el.style.display = 'inline-block'; });
+                annualPrices.forEach(function (el) { el.style.display = 'none'; });
+                saveBadges.forEach(function (el) { el.style.display = 'none'; });
+            } else {
+                monthlyPrices.forEach(function (el) { el.style.display = 'none'; });
+                annualPrices.forEach(function (el) { el.style.display = 'inline-block'; });
+                saveBadges.forEach(function (el) { el.style.display = 'inline-block'; });
+            }
+        });
+    });
+});
