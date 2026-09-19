@@ -250,3 +250,213 @@ img, svg {
   color: #FFFFFF;
   cursor: pointer;
 }
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+.hero-section {
+  position: relative;
+  background: var(--color-hero-bg);
+  min-height: 940px;
+  padding-top: 130px;
+  padding-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Glow Ellipse */
+.hero-glow {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.25) 0%, rgba(45, 212, 191, 0.15) 50%, rgba(16, 27, 53, 0) 70%);
+  filter: blur(100px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Giant "HEALTH" Watermark */
+.hero-watermark {
+  position: absolute;
+  width: 100%;
+  top: 280px;
+  left: 0;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: clamp(80px, 16vw, 230px);
+  line-height: 1;
+  letter-spacing: clamp(10px, 2.5vw, 32px);
+  text-transform: uppercase;
+  color: rgba(238, 238, 238, 0.07);
+  user-select: none;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 0.9fr;
+  align-items: center;
+  gap: 30px;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-tag {
+  font-family: 'Rubik', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: #FFFFFF;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
+
+.hero-title {
+  font-family: 'Rubik', sans-serif;
+  font-size: clamp(38px, 4vw, 56px);
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 1.15;
+}
+
+.hero-title .highlight-teal {
+  color: var(--color-teal);
+}
+
+.hero-subtitle {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #E2E8F0;
+  max-width: 480px;
+}
+
+.hero-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: var(--color-teal);
+  color: #101B35;
+  font-family: 'Rubik', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 16px 32px;
+  border-radius: 40px;
+  width: fit-content;
+  box-shadow: 0 8px 24px rgba(45, 212, 191, 0.35);
+  margin-top: 10px;
+}
+
+.hero-cta-btn:hover {
+  background: #14B8A6;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(45, 212, 191, 0.45);
+}
+
+.hero-cta-btn i {
+  font-size: 16px;
+  transition: transform 0.2s ease;
+}
+
+.hero-cta-btn:hover i {
+  transform: translateX(4px);
+}
+
+.hero-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-athlete-img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.5));
+  animation: floatHero 5s ease-in-out infinite;
+}
+
+@keyframes floatHero {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+
+.hero-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-stat-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(16px);
+  border-radius: 20px;
+  padding: 24px;
+  width: 100%;
+  max-width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.25);
+}
+
+.stat-card-title {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  color: #EEEEEE;
+  line-height: 1.35;
+}
+
+.avatar-bubbles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4px 0;
+}
+
+.avatar-bubble {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid #FFFFFF;
+  margin-left: -12px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.avatar-bubble:first-child {
+  margin-left: 0;
+}
+
+.stat-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(45, 212, 191, 0.15);
+  border: 1px solid var(--color-teal);
+  color: var(--color-teal);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
