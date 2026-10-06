@@ -1358,7 +1358,11 @@ h1, h2, h3 {
 }
 
 .team-header {
-  margin-bottom: var(--space-12);
+  margin: 0 auto var(--space-12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
 }
 
 .team-header h2 {
