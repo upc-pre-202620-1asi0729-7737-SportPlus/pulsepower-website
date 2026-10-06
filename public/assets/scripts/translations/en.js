@@ -1,4 +1,8 @@
 ﻿const translationsEN = {
+    meta: {
+        title: "PulsePower | Understand Your Body, Plan Your Day",
+        description: "Explore how PulsePower turns sleep, strain and recovery data into personalized insights to support your training, rest and everyday wellbeing."
+    },
     nav: {
         homeLabel: "PulsePower, back to top",
         menuLabel: "Main navigation",

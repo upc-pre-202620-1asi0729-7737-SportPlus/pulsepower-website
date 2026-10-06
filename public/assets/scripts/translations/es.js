@@ -1,4 +1,8 @@
 ﻿const translationsES = {
+    meta: {
+        title: "PulsePower | Comprende tu cuerpo, planifica tu día",
+        description: "Descubre cómo PulsePower convierte tus datos de sueño, esfuerzo y recuperación en información personalizada para apoyar tu entrenamiento, tu descanso y tu bienestar diario."
+    },
     nav: {
         homeLabel: "PulsePower, volver al inicio",
         menuLabel: "Navegación principal",

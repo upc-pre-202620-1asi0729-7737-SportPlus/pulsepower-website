@@ -252,15 +252,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // Video Section Tabs
     var videoTabs = document.querySelectorAll('.video-feature-tab');
     var videoTabContent = document.getElementById('video-feature-desc');
-    var videoIframe = document.getElementById('pulsepower-video-frame');
-
-    var videoEmbeds = {
-        "tab1": "https://www.youtube.com/embed/5qap5aO4i9A?si=pulsepower",
-        "tab2": "https://www.youtube.com/embed/vu7Rlkn2lEc?si=pulsepower",
-        "tab3": "https://www.youtube.com/embed/LpOAo21-778?si=pulsepower",
-        "tab4": "https://www.youtube.com/embed/jNQXAC9IVRw?si=pulsepower"
-    };
-
     videoTabs.forEach(function (tab) {
         tab.addEventListener('click', function () {
             videoTabs.forEach(function (t) {
@@ -271,9 +262,6 @@ document.addEventListener('DOMContentLoaded', function () {
             tab.setAttribute('aria-pressed', 'true');
 
             var tabKey = tab.dataset.tab;
-            if (videoIframe && videoEmbeds[tabKey]) {
-                videoIframe.src = videoEmbeds[tabKey];
-            }
 
             if (videoTabContent) {
                 var transKey = 'videoSection.' + tabKey + 'Desc';
