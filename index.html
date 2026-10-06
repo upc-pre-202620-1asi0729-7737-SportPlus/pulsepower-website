@@ -31,7 +31,7 @@
         <div class="nav-center-wrapper">
             <nav class="nav-links">
                 <a href="#features" data-i18n="nav.features">Features</a>
-                <a href="#services" data-i18n="nav.benefits">Benefits</a>
+                <a href="#benefits" data-i18n="nav.benefits">Benefits</a>
                 <a href="#about" data-i18n="nav.about">About Us</a>
                 <a href="#team" data-i18n="team.heading">Our Team</a>
                 <a href="#plans" data-i18n="nav.plans">Plans</a>
@@ -399,6 +399,105 @@
                 </a>
                 <a href="#plans" class="btn-secondary" data-i18n="ctaBanner.ctaSecondary">View Plans</a>
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= Benefits by Segment ================= -->
+<section class="benefits-section" id="benefits">
+    <div class="benefits-container">
+        <div class="benefits-header">
+            <h2 class="section-title-large" data-i18n="benefits.title">Benefits</h2>
+            <p class="section-desc-medium" data-i18n="benefits.subtitle">Choose your profile and see how PulsePower can help you.</p>
+        </div>
+
+        <div class="segment-toggle" role="tablist" aria-label="Choose your profile" data-i18n-aria-label="benefits.toggleLabel">
+            <button type="button" class="segment-toggle-btn active" role="tab" id="segment-tab-athletes" aria-selected="true" aria-controls="segment-panel-athletes" data-segment="athletes">
+                <i class="fas fa-person-running" aria-hidden="true"></i>
+                <span data-i18n="benefits.athletesTab">Athletes</span>
+            </button>
+            <button type="button" class="segment-toggle-btn" role="tab" id="segment-tab-wellness" aria-selected="false" aria-controls="segment-panel-wellness" data-segment="wellness" tabindex="-1">
+                <i class="fas fa-spa" aria-hidden="true"></i>
+                <span data-i18n="benefits.wellnessTab">Wellness Seekers</span>
+            </button>
+        </div>
+
+        <!-- Athletes -->
+        <div class="segment-panel segment-panel-athletes" role="tabpanel" id="segment-panel-athletes" aria-labelledby="segment-tab-athletes">
+            <p class="segment-intro" data-i18n="benefits.athletesIntro">For amateur and semi-professional athletes, and anyone with a demanding training routine.</p>
+            <ul class="benefit-list">
+                <li class="benefit-item">
+                    <div class="benefit-icon" aria-hidden="true"><i class="fas fa-battery-three-quarters"></i></div>
+                    <div>
+                        <h3 data-i18n="benefits.athletes1Title">Know whether you're ready to train</h3>
+                        <p data-i18n="benefits.athletes1Desc">Check your recovery level before deciding how hard to train today.</p>
+                    </div>
+                </li>
+                <li class="benefit-item">
+                    <div class="benefit-icon" aria-hidden="true"><i class="fas fa-gauge"></i></div>
+                    <div>
+                        <h3 data-i18n="benefits.athletes2Title">Intensity guidance on tough days</h3>
+                        <p data-i18n="benefits.athletes2Desc">Get suggestions to adjust your intensity when you slept poorly or feel fatigued.</p>
+                    </div>
+                </li>
+                <li class="benefit-item">
+                    <div class="benefit-icon" aria-hidden="true"><i class="fas fa-bell"></i></div>
+                    <div>
+                        <h3 data-i18n="benefits.athletes3Title">Alerts before overtraining</h3>
+                        <p data-i18n="benefits.athletes3Desc">Receive a warning when your records show signs of accumulated fatigue.</p>
+                    </div>
+                </li>
+                <li class="benefit-item">
+                    <div class="benefit-icon" aria-hidden="true"><i class="fas fa-calendar-days"></i></div>
+                    <div>
+                        <h3 data-i18n="benefits.athletes4Title">Reschedule when recovery is low</h3>
+                        <p data-i18n="benefits.athletes4Desc">Move demanding sessions to days when your body is better prepared.</p>
+                    </div>
+                </li>
+            </ul>
+            <a href="#plans" class="btn-primary" data-segment="athletes">
+                <span data-i18n="benefits.athletesCta">Create my athlete account</span>
+                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        <!-- Wellness Seekers -->
+        <div class="segment-panel segment-panel-wellness" role="tabpanel" id="segment-panel-wellness" aria-labelledby="segment-tab-wellness" hidden>
+            <p class="segment-intro" data-i18n="benefits.wellnessIntro">For busy professionals, graduate students and anyone dealing with stress who wants to rest better.</p>
+            <ul class="benefit-list">
+                <li class="benefit-item">
+                    <div class="benefit-icon" aria-hidden="true"><i class="fas fa-bed"></i></div>
+                    <div>
+                        <h3 data-i18n="benefits.wellness1Title">Know whether you really rested</h3>
+                        <p data-i18n="benefits.wellness1Desc">See whether your sleep was enough, beyond how you feel when you wake up.</p>
+                    </div>
+                </li>
+                <li class="benefit-item">
+                    <div class="benefit-icon" aria-hidden="true"><i class="fas fa-magnifying-glass"></i></div>
+                    <div>
+                        <h3 data-i18n="benefits.wellness2Title">Discover what affects your sleep</h3>
+                        <p data-i18n="benefits.wellness2Desc">Relate your rest to stress, schedules and daily habits.</p>
+                    </div>
+                </li>
+                <li class="benefit-item">
+                    <div class="benefit-icon" aria-hidden="true"><i class="fas fa-lightbulb"></i></div>
+                    <div>
+                        <h3 data-i18n="benefits.wellness3Title">Simple suggestions for your routine</h3>
+                        <p data-i18n="benefits.wellness3Desc">Get small, practical adjustments you can try in your day-to-day.</p>
+                    </div>
+                </li>
+                <li class="benefit-item">
+                    <div class="benefit-icon" aria-hidden="true"><i class="fas fa-chart-line"></i></div>
+                    <div>
+                        <h3 data-i18n="benefits.wellness4Title">Follow your trends over time</h3>
+                        <p data-i18n="benefits.wellness4Desc">Review how your sleep and recovery change week after week.</p>
+                    </div>
+                </li>
+            </ul>
+            <a href="#plans" class="btn-primary" data-segment="wellness">
+                <span data-i18n="benefits.wellnessCta">Create my wellness account</span>
+                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </a>
         </div>
     </div>
 </section>

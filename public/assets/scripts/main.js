@@ -229,6 +229,38 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    // Benefits by Segment Toggle (Athletes / Wellness Seekers)
+    var segmentTabs = Array.prototype.slice.call(document.querySelectorAll('.segment-toggle-btn'));
+
+    function selectSegment(selectedTab, moveFocus) {
+        segmentTabs.forEach(function (tab) {
+            var isSelected = tab === selectedTab;
+            tab.classList.toggle('active', isSelected);
+            tab.setAttribute('aria-selected', isSelected ? 'true' : 'false');
+            tab.setAttribute('tabindex', isSelected ? '0' : '-1');
+            var panel = document.getElementById(tab.getAttribute('aria-controls'));
+            if (panel) {
+                panel.hidden = !isSelected;
+            }
+        });
+        if (moveFocus) {
+            selectedTab.focus();
+        }
+    }
+
+    segmentTabs.forEach(function (tab, index) {
+        tab.addEventListener('click', function () {
+            selectSegment(tab, false);
+        });
+        tab.addEventListener('keydown', function (e) {
+            if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+            e.preventDefault();
+            var step = e.key === 'ArrowRight' ? 1 : -1;
+            var next = segmentTabs[(index + step + segmentTabs.length) % segmentTabs.length];
+            selectSegment(next, true);
+        });
+    });
+
     // Pricing Plans Toggle (Monthly / Annual)
     var planToggles = document.querySelectorAll('.plan-toggle-btn');
     var monthlyPrices = document.querySelectorAll('.price-monthly');
