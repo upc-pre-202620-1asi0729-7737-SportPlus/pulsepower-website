@@ -110,6 +110,13 @@ function applyTranslations(lang) {
         btn.classList.toggle('active', btn.dataset.lang === lang);
     });
 
+    // Hamburger button label follows the menu state
+    var menuButton = document.getElementById('menu-btn');
+    if (menuButton) {
+        var isOpen = menuButton.getAttribute('aria-expanded') === 'true';
+        menuButton.setAttribute('aria-label', flat[isOpen ? 'nav.closeMenu' : 'nav.openMenu']);
+    }
+
     // Update HTML lang attribute
     document.documentElement.lang = lang;
 }
@@ -147,16 +154,28 @@ document.addEventListener('DOMContentLoaded', function () {
     var menuBtn = document.getElementById('menu-btn');
     var navbar = document.querySelector('.header .nav-links');
     if (menuBtn && navbar) {
+        var setMenuOpen = function (isOpen) {
+            navbar.classList.toggle('active', isOpen);
+            menuBtn.classList.toggle('fa-times', isOpen);
+            menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            applyTranslations(currentLang);
+        };
+
         menuBtn.addEventListener('click', function () {
-            navbar.classList.toggle('active');
-            menuBtn.classList.toggle('fa-times');
+            setMenuOpen(!navbar.classList.contains('active'));
         });
 
         navbar.querySelectorAll('a').forEach(function (link) {
             link.addEventListener('click', function () {
-                navbar.classList.remove('active');
-                menuBtn.classList.remove('fa-times');
+                setMenuOpen(false);
             });
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && navbar.classList.contains('active')) {
+                setMenuOpen(false);
+                menuBtn.focus();
+            }
         });
     }
 

@@ -24,16 +24,17 @@
 <!-- ================= Header & Navbar ================= -->
 <header class="header">
     <div class="nav-container">
-        <a href="#home" class="brand-logo">
-            <img src="public/assets/images/pulsepower-logo.png" alt="PulsePower Logo" />
+        <a href="#home" class="brand-logo" aria-label="PulsePower, back to top" data-i18n-aria-label="nav.homeLabel">
+            <img src="public/assets/images/pulsepower-logo.png" alt="PulsePower" />
         </a>
 
         <div class="nav-center-wrapper">
-            <nav class="nav-links">
+            <nav class="nav-links" id="main-nav" aria-label="Main navigation" data-i18n-aria-label="nav.menuLabel">
+                <a href="#offer" data-i18n="nav.offer">What We Offer</a>
                 <a href="#features" data-i18n="nav.features">Features</a>
                 <a href="#benefits" data-i18n="nav.benefits">Benefits</a>
                 <a href="#about" data-i18n="nav.about">About Us</a>
-                <a href="#team" data-i18n="team.heading">Our Team</a>
+                <a href="#team" data-i18n="nav.team">Our Team</a>
                 <a href="#plans" data-i18n="nav.plans">Plans</a>
             </nav>
         </div>
@@ -51,7 +52,7 @@
             <a href="#plans" class="btn-login" data-i18n="nav.login">Log In</a>
             <a href="#plans" class="btn-signup" data-i18n="nav.signup">Sign Up</a>
 
-            <div id="menu-btn" class="fas fa-bars"></div>
+            <button type="button" id="menu-btn" class="fas fa-bars" aria-label="Open menu" aria-controls="main-nav" aria-expanded="false"></button>
         </div>
     </div>
 </header>
@@ -502,6 +503,43 @@
     </div>
 </section>
 
+<!-- ================= About Us ================= -->
+<section class="overview-section" id="about">
+    <div class="overview-grid">
+        <div class="overview-left">
+            <h2 class="overview-title" data-i18n="about.title">About Us</h2>
+            <p class="overview-lead" data-i18n="about.lead">PulsePower is a product of SportPlus, a technology startup focused on helping people understand their physical wellbeing.</p>
+            <p class="overview-desc" data-i18n="about.desc">
+                We don't sell another device. PulsePower is the intelligence layer that translates the data your wristband already records into clear information, both for athletes who want to train better and for people who want to rest better.
+            </p>
+        </div>
+
+        <div class="overview-right">
+            <article class="about-card">
+                <div class="about-card-icon" aria-hidden="true"><i class="fas fa-compass"></i></div>
+                <div>
+                    <h3 data-i18n="about.purposeTitle">Our purpose</h3>
+                    <p data-i18n="about.purposeDesc">Close the gap between what your body communicates and what you actually understand from it, so that training and rest decisions rely on clear information instead of intuition.</p>
+                </div>
+            </article>
+            <article class="about-card">
+                <div class="about-card-icon" aria-hidden="true"><i class="fas fa-bullseye"></i></div>
+                <div>
+                    <h3 data-i18n="about.missionTitle">Our mission</h3>
+                    <p data-i18n="about.missionDesc">Offer accessible technology that uses the wristband you already have and translates your physiological state into concrete decisions: less uncertainty for those who want to understand their body and rest, more precision for those who want to improve their performance.</p>
+                </div>
+            </article>
+            <article class="about-card about-card-rest">
+                <div class="about-card-icon" aria-hidden="true"><i class="fas fa-eye"></i></div>
+                <div>
+                    <h3 data-i18n="about.visionTitle">Our vision</h3>
+                    <p data-i18n="about.visionDesc">To become the reference for personal physiological intelligence in Latin America, connecting athletes and wellbeing-focused people with the same objective source of information about rest, recovery and performance.</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
 <!-- ================= Our Team Section ================= -->
 <section class="team-section" id="team">
     <div class="team-header">
@@ -681,48 +719,6 @@
             </div>
 
             <button class="btn-pricing btn-pricing-pro" data-i18n="plans.proCta">Choose Pro</button>
-        </div>
-    </div>
-</section>
-
-<!-- ================= Overview & Secondary Video Section ================= -->
-<section class="overview-section" id="about">
-    <div class="overview-grid">
-        <!-- Left Info -->
-        <div class="overview-left">
-            <h2 class="overview-title" data-i18n="overview.title">
-                PulsePower: Understand Your Body, Support Your Wellbeing
-            </h2>
-            <p class="overview-desc" data-i18n="overview.desc">
-                PulsePower is a physiological intelligence platform that interprets data from a connected wearable. It brings together sleep, strain and recovery information to offer clear explanations and personalized recommendations. Built for regular exercisers and people seeking better rest, it helps users understand their patterns and make everyday wellbeing decisions based on their history and goals.
-            </p>
-
-            <div class="overview-points">
-                <div class="overview-point-item">
-                    <i class="fas fa-circle-check overview-point-bullet"></i>
-                    <span data-i18n="overview.point1">Integrated monitoring: review your sleep, strain and recovery records in a single platform.</span>
-                </div>
-                <div class="overview-point-item">
-                    <i class="fas fa-circle-check overview-point-bullet"></i>
-                    <span data-i18n="overview.point2">Personalized guidance: connect your indicators to your goals and explore your data with an AI assistant.</span>
-                </div>
-                <div class="overview-point-item">
-                    <i class="fas fa-circle-check overview-point-bullet"></i>
-                    <span data-i18n="overview.point3">Habit tracking: review trends and reports to understand how your activity and rest evolve.</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- Right Video -->
-        <div class="overview-right">
-            <div class="video-player-container video-placeholder">
-                <div class="youtube-play-link">
-                    <div class="youtube-play-btn">
-                        <i class="fas fa-play"></i>
-                    </div>
-                    <span class="youtube-play-text">Watch Video</span>
-                </div>
-            </div>
         </div>
     </div>
 </section>

@@ -1,8 +1,14 @@
 ﻿const translationsES = {
     nav: {
-        features: "Características",
+        homeLabel: "PulsePower, volver al inicio",
+        menuLabel: "Navegación principal",
+        openMenu: "Abrir menú",
+        closeMenu: "Cerrar menú",
+        offer: "Lo que ofrecemos",
+        features: "Funcionalidades",
         benefits: "Beneficios",
         about: "Nosotros",
+        team: "Nuestro equipo",
         plans: "Planes",
         login: "Iniciar Sesión",
         signup: "Registrarse"
@@ -114,6 +120,17 @@
         wellness4Desc: "Revisa cómo cambian tu sueño y tu recuperación semana a semana.",
         wellnessCta: "Crear mi cuenta de bienestar"
     },
+    about: {
+        title: "Nosotros",
+        lead: "PulsePower es un producto de SportPlus, una startup tecnológica enfocada en ayudar a las personas a comprender su bienestar físico.",
+        desc: "No vendemos un dispositivo más. PulsePower es la capa de inteligencia que traduce los datos que tu pulsera ya registra en información clara, tanto para deportistas que quieren entrenar mejor como para personas que quieren descansar mejor.",
+        purposeTitle: "Nuestro propósito",
+        purposeDesc: "Cerrar la brecha entre lo que tu cuerpo comunica y lo que realmente entiendes de él, para que tus decisiones de entrenamiento y descanso se basen en información clara y no en la intuición.",
+        missionTitle: "Nuestra misión",
+        missionDesc: "Brindar tecnología accesible que aproveche la pulsera que ya utilizas y traduzca tu estado fisiológico en decisiones concretas: menos incertidumbre para quienes buscan entender su cuerpo y su descanso, más precisión para quienes buscan mejorar su rendimiento.",
+        visionTitle: "Nuestra visión",
+        visionDesc: "Convertirnos en el referente de inteligencia fisiológica personal en Latinoamérica, conectando a deportistas y a personas enfocadas en su bienestar con una misma fuente objetiva de información sobre descanso, recuperación y rendimiento."
+    },
     team: {
         heading: "Nuestro Equipo",
         role: "Estudiante de Ingeniería de Software",
@@ -160,13 +177,6 @@
         proF3: "Informes avanzados de evolución",
         proF4: "Guía y recomendaciones a medida",
         proF5: "Historial longitudinal extendido"
-    },
-    overview: {
-        title: "PulsePower: Comprende tu Cuerpo, Respalda tu Bienestar",
-        desc: "PulsePower es una plataforma de inteligencia fisiológica que interpreta datos de dispositivos wearables conectados. Integra información de sueño, esfuerzo y recuperación para ofrecer explicaciones claras y recomendaciones personalizadas. Diseñada para deportistas habituales y personas que buscan un mejor descanso, ayuda a comprender patrones y tomar decisiones cotidianas de bienestar basadas en su historial y metas.",
-        point1: "Monitoreo integrado: revisa tus registros de sueño, esfuerzo y recuperación en una sola plataforma.",
-        point2: "Orientación personalizada: conecta tus indicadores con tus objetivos y explora tus datos con un asistente de IA.",
-        point3: "Seguimiento de hábitos: revisa tendencias e informes para comprender cómo evolucionan tu actividad y descanso."
     },
     footer: {
         tagline: "PulsePower transforma tus registros de sueño, esfuerzo y recuperación en perspectivas claras para respaldar tu bienestar diario.",
