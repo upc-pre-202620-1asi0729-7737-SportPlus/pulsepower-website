@@ -418,6 +418,10 @@ h1, h2, h3 {
   transform: translateY(0);
 }
 
+.nav-links .nav-mobile-auth {
+  display: none;
+}
+
 #menu-btn {
   display: none;
   font-size: 24px;
@@ -2022,7 +2026,7 @@ h1, h2, h3 {
 /* ==========================================================================
    Responsive Breakpoints
    ========================================================================== */
-@media (max-width: 1180px) {
+@media (max-width: 1360px) {
   .nav-links { gap: var(--space-4); }
   .nav-links a, .btn-login, .btn-signup { font-size: 14px; }
 }
@@ -2059,7 +2063,7 @@ h1, h2, h3 {
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   #menu-btn {
     display: inline-flex;
   }
@@ -2080,6 +2084,23 @@ h1, h2, h3 {
   }
   .nav-links.active {
     left: 0;
+  }
+  .nav-links .nav-mobile-auth {
+    display: inline-flex;
+  }
+  .nav-links .nav-mobile-auth::after {
+    display: none;
+  }
+  .nav-links .nav-mobile-auth-primary {
+    background: var(--color-secondary);
+    color: var(--color-primary);
+    font-weight: 600;
+    padding: var(--space-3) var(--space-8);
+    border-radius: var(--radius-pill);
+  }
+  .nav-links .nav-mobile-auth-primary:hover {
+    background: var(--color-secondary-hover);
+    color: var(--color-primary);
   }
   .nav-links a {
     font-size: 18px;

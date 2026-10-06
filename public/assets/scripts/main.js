@@ -1,5 +1,13 @@
 // PulsePower - Interactive Scripts & i18n Controller
 
+// WebApp entry points (US15). Update WEBAPP_URL and the paths when the WebApp is deployed.
+var WEBAPP_URL = 'https://upc-pre-202620-1asi0729-7737-sportplus.github.io/pulsepower-website/';
+var WEBAPP_PATHS = {
+    'sign-in': '',   // e.g. 'sign-in'
+    'register': ''   // e.g. 'sign-up'
+};
+var currentBilling = 'monthly';
+
 var SUPPORTED_LANGS = ['en', 'es'];
 
 // Language priority: ?lang= in the URL, then the saved preference, then English (default)
@@ -29,6 +37,30 @@ function flattenTranslations(obj, prefix) {
     }, {});
 }
 
+
+// Build WebApp links that keep the visitor's language (and plan / segment when present)
+function buildWebAppUrl(target, lang, extraParams) {
+    var url = new URL(WEBAPP_PATHS[target] || '', WEBAPP_URL);
+    url.searchParams.set('lang', lang);
+    Object.keys(extraParams).forEach(function (key) {
+        url.searchParams.set(key, extraParams[key]);
+    });
+    return url.toString();
+}
+
+function updateWebAppLinks(lang) {
+    document.querySelectorAll('[data-webapp]').forEach(function (link) {
+        var params = {};
+        if (link.dataset.plan) {
+            params.plan = link.dataset.plan;
+            params.billing = currentBilling;
+        }
+        if (link.dataset.segment) {
+            params.segment = link.dataset.segment;
+        }
+        link.href = buildWebAppUrl(link.dataset.webapp, lang, params);
+    });
+}
 
 function applyTranslations(lang) {
     var source = lang === 'en' ? translationsEN : translationsES;
@@ -109,6 +141,9 @@ function applyTranslations(lang) {
     document.querySelectorAll('.floating-lang-btn').forEach(function (btn) {
         btn.classList.toggle('active', btn.dataset.lang === lang);
     });
+
+    // Keep WebApp links in sync with the selected language
+    updateWebAppLinks(lang);
 
     // Hamburger button label follows the menu state
     var menuButton = document.getElementById('menu-btn');
@@ -288,10 +323,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
     planToggles.forEach(function (btn) {
         btn.addEventListener('click', function () {
-            planToggles.forEach(function (b) { b.classList.remove('active'); });
+            planToggles.forEach(function (b) {
+                b.classList.remove('active');
+                b.setAttribute('aria-pressed', 'false');
+            });
             btn.classList.add('active');
+            btn.setAttribute('aria-pressed', 'true');
 
             var mode = btn.dataset.plan;
+            currentBilling = mode;
+            updateWebAppLinks(currentLang);
             if (mode === 'monthly') {
                 monthlyPrices.forEach(function (el) { el.style.display = 'inline-block'; });
                 annualPrices.forEach(function (el) { el.style.display = 'none'; });

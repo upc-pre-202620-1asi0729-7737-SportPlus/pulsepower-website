@@ -36,21 +36,23 @@
                 <a href="#about" data-i18n="nav.about">About Us</a>
                 <a href="#team" data-i18n="nav.team">Our Team</a>
                 <a href="#plans" data-i18n="nav.plans">Plans</a>
+                <a href="https://upc-pre-202620-1asi0729-7737-sportplus.github.io/pulsepower-website/" class="nav-mobile-auth" data-webapp="sign-in" data-i18n="nav.signIn">Sign In</a>
+                <a href="https://upc-pre-202620-1asi0729-7737-sportplus.github.io/pulsepower-website/" class="nav-mobile-auth nav-mobile-auth-primary" data-webapp="register" data-i18n="nav.createAccount">Create Account</a>
             </nav>
         </div>
 
         <div class="nav-actions">
-            <!-- Bilingual Switcher Toggle in Navbar (Figma style) -->
-            <div class="navbar-lang-switch" title="Cambiar idioma / Switch language">
-                <span class="lang-opt active" data-lang="en">EN</span>
-                <div class="switch-track">
+            <!-- Language switch -->
+            <div class="navbar-lang-switch" role="group" aria-label="Language" data-i18n-aria-label="nav.languageLabel">
+                <button type="button" class="lang-opt active" data-lang="en" lang="en" aria-label="English">EN</button>
+                <div class="switch-track" aria-hidden="true">
                     <div class="switch-thumb"></div>
                 </div>
-                <span class="lang-opt" data-lang="es">ES</span>
+                <button type="button" class="lang-opt" data-lang="es" lang="es" aria-label="Español">ES</button>
             </div>
 
-            <a href="#plans" class="btn-login" data-i18n="nav.login">Log In</a>
-            <a href="#plans" class="btn-signup" data-i18n="nav.signup">Sign Up</a>
+            <a href="https://upc-pre-202620-1asi0729-7737-sportplus.github.io/pulsepower-website/" class="btn-login" data-webapp="sign-in" data-i18n="nav.signIn">Sign In</a>
+            <a href="https://upc-pre-202620-1asi0729-7737-sportplus.github.io/pulsepower-website/" class="btn-signup" data-webapp="register" data-i18n="nav.createAccount">Create Account</a>
 
             <button type="button" id="menu-btn" class="fas fa-bars" aria-label="Open menu" aria-controls="main-nav" aria-expanded="false"></button>
         </div>
@@ -74,7 +76,7 @@
                 PulsePower connects to the wristband you already use and turns your sleep, strain and recovery data into clear insights to help you plan your training and rest.
             </p>
             <div class="hero-actions">
-                <a href="#plans" class="btn-primary">
+                <a href="https://upc-pre-202620-1asi0729-7737-sportplus.github.io/pulsepower-website/" class="btn-primary" data-webapp="register">
                     <span data-i18n="hero.ctaPrimary">Create Account</span>
                     <i class="fas fa-arrow-right" aria-hidden="true"></i>
                 </a>
@@ -394,7 +396,7 @@
             <h3 data-i18n="ctaBanner.title">Start understanding your body</h3>
             <p data-i18n="ctaBanner.subtitle">Your body speaks every day. Our platform translates it. Create your account, connect your wristband and discover what your sleep, strain and recovery data say about your routine.</p>
             <div class="cta-banner-actions">
-                <a href="#plans" class="btn-primary">
+                <a href="https://upc-pre-202620-1asi0729-7737-sportplus.github.io/pulsepower-website/" class="btn-primary" data-webapp="register">
                     <span data-i18n="ctaBanner.ctaPrimary">Create Account</span>
                     <i class="fas fa-arrow-right" aria-hidden="true"></i>
                 </a>
@@ -456,7 +458,7 @@
                     </div>
                 </li>
             </ul>
-            <a href="#plans" class="btn-primary" data-segment="athletes">
+            <a href="https://upc-pre-202620-1asi0729-7737-sportplus.github.io/pulsepower-website/" class="btn-primary" data-webapp="register" data-segment="athlete">
                 <span data-i18n="benefits.athletesCta">Create my athlete account</span>
                 <i class="fas fa-arrow-right" aria-hidden="true"></i>
             </a>
@@ -495,7 +497,7 @@
                     </div>
                 </li>
             </ul>
-            <a href="#plans" class="btn-primary" data-segment="wellness">
+            <a href="https://upc-pre-202620-1asi0729-7737-sportplus.github.io/pulsepower-website/" class="btn-primary" data-webapp="register" data-segment="wellness">
                 <span data-i18n="benefits.wellnessCta">Create my wellness account</span>
                 <i class="fas fa-arrow-right" aria-hidden="true"></i>
             </a>
@@ -620,8 +622,8 @@
 
     <!-- Toggle Pill -->
     <div class="plan-toggle-container">
-        <button class="plan-toggle-btn active" data-plan="monthly" data-i18n="plans.monthly">Monthly</button>
-        <button class="plan-toggle-btn" data-plan="annual" data-i18n="plans.annual">Annual</button>
+        <button type="button" class="plan-toggle-btn active" data-plan="monthly" aria-pressed="true" data-i18n="plans.monthly">Monthly</button>
+        <button type="button" class="plan-toggle-btn" data-plan="annual" aria-pressed="false" data-i18n="plans.annual">Annual</button>
     </div>
 
     <div class="plans-grid">
@@ -669,7 +671,7 @@
                 </ul>
             </div>
 
-            <button class="btn-pricing btn-pricing-basic" data-i18n="plans.basicCta">Select Basic</button>
+            <a href="https://upc-pre-202620-1asi0729-7737-sportplus.github.io/pulsepower-website/" class="btn-pricing btn-pricing-basic" data-webapp="register" data-plan="basic" data-i18n="plans.basicCta">Choose Basic</a>
         </div>
 
         <!-- Pro Plan -->
@@ -718,7 +720,7 @@
                 </ul>
             </div>
 
-            <button class="btn-pricing btn-pricing-pro" data-i18n="plans.proCta">Choose Pro</button>
+            <a href="https://upc-pre-202620-1asi0729-7737-sportplus.github.io/pulsepower-website/" class="btn-pricing btn-pricing-pro" data-webapp="register" data-plan="pro" data-i18n="plans.proCta">Choose Pro</a>
         </div>
     </div>
 </section>

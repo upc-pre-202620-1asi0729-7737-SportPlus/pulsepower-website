@@ -10,8 +10,9 @@
         about: "About Us",
         team: "Our Team",
         plans: "Plans",
-        login: "Log In",
-        signup: "Sign Up"
+        languageLabel: "Language",
+        signIn: "Sign In",
+        createAccount: "Create Account"
     },
     hero: {
         tag: "Your body speaks every day. Our platform translates it.",
@@ -158,7 +159,7 @@
         basicPriceMonthlyUnit: "/per month",
         basicPriceAnnual: "$182",
         basicPriceAnnualUnit: "/per year",
-        basicCta: "Select Basic",
+        basicCta: "Choose Basic",
         basicF1: "Health dashboard",
         basicF2: "Daily summary",
         basicF3: "Sleep tracking",
