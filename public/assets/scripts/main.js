@@ -1,6 +1,19 @@
 // PulsePower - Interactive Scripts & i18n Controller
 
-let currentLang = localStorage.getItem('pulsepower-lang') || 'es';
+var SUPPORTED_LANGS = ['en', 'es'];
+
+// Language priority: ?lang= in the URL, then the saved preference, then English (default)
+function getInitialLang() {
+    var urlLang = new URLSearchParams(window.location.search).get('lang');
+    if (SUPPORTED_LANGS.indexOf(urlLang) !== -1) {
+        localStorage.setItem('pulsepower-lang', urlLang);
+        return urlLang;
+    }
+    var savedLang = localStorage.getItem('pulsepower-lang');
+    return SUPPORTED_LANGS.indexOf(savedLang) !== -1 ? savedLang : 'en';
+}
+
+let currentLang = getInitialLang();
 
 // Flatten nested object: { "nav": { "home": "Inicio" } } -> { "nav.home": "Inicio" }
 function flattenTranslations(obj, prefix) {
