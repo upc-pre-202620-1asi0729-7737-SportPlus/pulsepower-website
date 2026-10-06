@@ -59,6 +59,16 @@ function applyTranslations(lang) {
         }
     });
 
+    // Apply to translatable attributes: [data-i18n-alt], [data-i18n-aria-label], [data-i18n-content]
+    [['data-i18n-alt', 'alt'], ['data-i18n-aria-label', 'aria-label'], ['data-i18n-content', 'content']].forEach(function (pair) {
+        document.querySelectorAll('[' + pair[0] + ']').forEach(function (el) {
+            var key = el.getAttribute(pair[0]);
+            if (flat[key] !== undefined) {
+                el.setAttribute(pair[1], flat[key]);
+            }
+        });
+    });
+
     // Apply to [data-i18n-placeholder]
     document.querySelectorAll('[data-i18n-placeholder]').forEach(function (el) {
         var key = el.getAttribute('data-i18n-placeholder');
@@ -160,20 +170,29 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Coaching Services Accordion
+    // Features Accordion (one item open at a time)
     var serviceCards = document.querySelectorAll('.service-accordion-card');
+
+    function setCardOpen(card, isOpen) {
+        card.classList.toggle('active', isOpen);
+        var trigger = card.querySelector('.service-card-header');
+        if (trigger) {
+            trigger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        }
+    }
+
     serviceCards.forEach(function (card) {
         card.addEventListener('click', function () {
             var isAlreadyActive = card.classList.contains('active');
-            serviceCards.forEach(function (c) { c.classList.remove('active'); });
+            serviceCards.forEach(function (c) { setCardOpen(c, false); });
             if (!isAlreadyActive) {
-                card.classList.add('active');
+                setCardOpen(card, true);
             }
         });
     });
     // Default first active
     if (serviceCards.length > 0) {
-        serviceCards[0].classList.add('active');
+        setCardOpen(serviceCards[0], true);
     }
 
     // Video Section Tabs
@@ -190,8 +209,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     videoTabs.forEach(function (tab) {
         tab.addEventListener('click', function () {
-            videoTabs.forEach(function (t) { t.classList.remove('active'); });
+            videoTabs.forEach(function (t) {
+                t.classList.remove('active');
+                t.setAttribute('aria-pressed', 'false');
+            });
             tab.classList.add('active');
+            tab.setAttribute('aria-pressed', 'true');
 
             var tabKey = tab.dataset.tab;
             if (videoIframe && videoEmbeds[tabKey]) {

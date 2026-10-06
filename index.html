@@ -59,306 +59,345 @@
 <!-- ================= Hero Section ================= -->
 <section class="hero-section" id="home">
     <div class="hero-glow"></div>
-    <div class="hero-watermark" data-i18n="hero.watermark">HEALTH</div>
+    <div class="hero-watermark" aria-hidden="true">PULSE</div>
 
     <div class="hero-grid">
         <!-- Left Content -->
         <div class="hero-left">
-            <span class="hero-tag" data-i18n="hero.tag">Transform Your Body, Optimize Your</span>
+            <p class="hero-tag" data-i18n="hero.tag">Your body speaks every day. Our platform translates it.</p>
             <h1 class="hero-title">
                 Pulse<span class="highlight-teal">Power</span>
             </h1>
+            <p class="hero-value" data-i18n="hero.valueProp">You can't perform better without recovering better. Know yourself first.</p>
             <p class="hero-subtitle" data-i18n="hero.subtitle">
-                PulsePower turns your sleep, strain and recovery data into clear insights to help you plan your training and rest.
+                PulsePower connects to the wristband you already use and turns your sleep, strain and recovery data into clear insights to help you plan your training and rest.
             </p>
-            <a href="#services" class="hero-cta-btn">
-                <span data-i18n="hero.cta">Start Your Transformation</span>
-                <i class="fas fa-arrow-right"></i>
-            </a>
+            <div class="hero-actions">
+                <a href="#plans" class="btn-primary">
+                    <span data-i18n="hero.ctaPrimary">Create Account</span>
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </a>
+                <a href="#plans" class="btn-secondary on-dark" data-i18n="hero.ctaSecondary">View Plans</a>
+            </div>
         </div>
 
-        <!-- Center Athlete Image -->
+        <!-- Center Image -->
         <div class="hero-center">
-            <img src="public/assets/images/hero-athlete-real.png" alt="Athletic training hero" class="hero-athlete-img" />
+            <img src="public/assets/images/hero-athlete-real.png" alt="Athlete during a training session" data-i18n-alt="hero.imageAlt" class="hero-athlete-img" />
         </div>
 
-        <!-- Right Stat Card -->
+        <!-- Right Indicators Card -->
         <div class="hero-right">
             <div class="hero-stat-card">
-                <h3 class="stat-card-title" data-i18n="hero.cardTitle">Sleep, strain and recovery</h3>
+                <h2 class="stat-card-title" data-i18n="hero.cardTitle">Sleep, strain and recovery</h2>
 
-                <div class="avatar-bubbles">
-                    <div class="avatar-bubble" style="background-image: url('public/assets/images/team-luis.svg');"></div>
-                    <div class="avatar-bubble" style="background-image: url('public/assets/images/team-miroslav.svg');"></div>
-                    <div class="avatar-bubble" style="background-image: url('public/assets/images/team-bruno.svg');"></div>
-                </div>
+                <ul class="hero-metrics">
+                    <li class="hero-metric">
+                        <i class="fas fa-moon" aria-hidden="true"></i>
+                        <span data-i18n="hero.metricSleep">Sleep</span>
+                    </li>
+                    <li class="hero-metric">
+                        <i class="fas fa-bolt" aria-hidden="true"></i>
+                        <span data-i18n="hero.metricStrain">Strain</span>
+                    </li>
+                    <li class="hero-metric">
+                        <i class="fas fa-heart-pulse" aria-hidden="true"></i>
+                        <span data-i18n="hero.metricRecovery">Recovery</span>
+                    </li>
+                </ul>
 
                 <div class="stat-badge">
-                    <i class="fas fa-microchip"></i>
-                    <span data-i18n="hero.cardBadge">AI Insights</span>
+                    <i class="fas fa-robot" aria-hidden="true"></i>
+                    <span data-i18n="hero.cardBadge">AI-powered insights</span>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- ================= Marquee / Ticker Ribbon ================= -->
+<!-- ================= Pillars Ribbon ================= -->
 <div class="marquee-ribbon">
-    <div class="marquee-content">
-        <div class="marquee-item">
-            <span data-i18n="marquee.item1">Evidence-Based Coaching</span>
-            <div class="marquee-bullet"></div>
-        </div>
-        <div class="marquee-item">
-            <span data-i18n="marquee.item2">Hormone & Gut Health Optimization</span>
-            <div class="marquee-bullet"></div>
-        </div>
-        <div class="marquee-item">
-            <span data-i18n="marquee.item3">Physique Transformation Experts</span>
-            <div class="marquee-bullet"></div>
-        </div>
-        <div class="marquee-item">
-            <span data-i18n="marquee.item1">Evidence-Based Coaching</span>
-            <div class="marquee-bullet"></div>
-        </div>
-        <div class="marquee-item">
-            <span data-i18n="marquee.item2">Hormone & Gut Health Optimization</span>
-        </div>
-    </div>
+    <ul class="marquee-content">
+        <li class="marquee-item">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+            <span data-i18n="marquee.item1">Sleep</span>
+        </li>
+        <li class="marquee-item">
+            <i class="fas fa-bolt" aria-hidden="true"></i>
+            <span data-i18n="marquee.item2">Strain</span>
+        </li>
+        <li class="marquee-item">
+            <i class="fas fa-heart-pulse" aria-hidden="true"></i>
+            <span data-i18n="marquee.item3">Recovery</span>
+        </li>
+        <li class="marquee-item">
+            <i class="fas fa-robot" aria-hidden="true"></i>
+            <span data-i18n="marquee.item4">AI Assistant</span>
+        </li>
+        <li class="marquee-item">
+            <i class="fas fa-chart-line" aria-hidden="true"></i>
+            <span data-i18n="marquee.item5">Progress Reports</span>
+        </li>
+    </ul>
 </div>
 
-<!-- ================= Science-Backed Coaching Section ================= -->
-<section class="science-section">
-    <div class="science-container">
-        <h2 class="section-title-large" data-i18n="science.title">
-            Science-Backed, Results Driven Coaching
-        </h2>
-        <p class="section-desc-medium" data-i18n="science.subtitle">
-            Turn your physiological data into clear guidance. Understand your habits and find a balance between activity and rest with insights tailored to you.
-        </p>
-        <a href="#team" class="btn-primary">
-            <span data-i18n="science.cta">Meet the Team</span>
-            <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-
-    <!-- Team Lineup Graphic -->
-    <div class="team-lineup-wrapper">
-        <img src="public/assets/images/team-strip-real.png" alt="PulsePower Specialists Lineup" />
-    </div>
-</section>
-
-<!-- ================= Coaching Services Section ================= -->
-<section class="services-section" id="services">
-    <div class="services-grid">
-        <!-- Left Accordions -->
-        <div class="services-left">
-            <h2 class="section-title-large" data-i18n="services.title">Our Coaching Services</h2>
-            <p class="section-desc-medium" data-i18n="services.subtitle">
-                PulsePower brings your sleep, strain and recovery records together to support informed decisions about your daily routine.
+<!-- ================= What We Offer ================= -->
+<section class="offer-section" id="offer">
+    <div class="offer-container">
+        <div class="offer-header">
+            <h2 class="section-title-large" data-i18n="offer.title">What We Offer</h2>
+            <p class="section-desc-medium" data-i18n="offer.desc">
+                PulsePower connects to the wristband you already use and turns your physiological signals into clear indicators of sleep, strain and recovery, with personalized guidance for your training and rest.
             </p>
-
-            <div class="services-accordion-list">
-                <!-- Accordion 1 -->
-                <div class="service-accordion-card active">
-                    <div class="service-card-header">
-                        <h3 data-i18n="services.item1Title">Detailed Assessment</h3>
-                        <div class="service-arrow-btn"><i class="fas fa-arrow-right"></i></div>
-                    </div>
-                    <div class="service-card-body">
-                        <p data-i18n="services.item1Desc">
-                            Comprehensive biometric analysis, metabolic baseline evaluation, and health biomarker profiling to pinpoint your unique physiological starting point.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Accordion 2 -->
-                <div class="service-accordion-card">
-                    <div class="service-card-header">
-                        <h3 data-i18n="services.item2Title">Custom Goal-Aligned Plan</h3>
-                        <div class="service-arrow-btn"><i class="fas fa-arrow-right"></i></div>
-                    </div>
-                    <div class="service-card-body">
-                        <p data-i18n="services.item2Desc">
-                            Periodized training programs and nutritional guidance engineered specifically around your recovery capacity and personal goals.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Accordion 3 -->
-                <div class="service-accordion-card">
-                    <div class="service-card-header">
-                        <h3 data-i18n="services.item3Title">Root Cause Lab & Biomarker Analysis</h3>
-                        <div class="service-arrow-btn"><i class="fas fa-arrow-right"></i></div>
-                    </div>
-                    <div class="service-card-body">
-                        <p data-i18n="services.item3Desc">
-                            In-depth investigation of hormonal balances, gut microbiome vitality, and micronutrient status to resolve hidden barriers to progress.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Accordion 4 -->
-                <div class="service-accordion-card">
-                    <div class="service-card-header">
-                        <h3 data-i18n="services.item4Title">Dedicated Coaching</h3>
-                        <div class="service-arrow-btn"><i class="fas fa-arrow-right"></i></div>
-                    </div>
-                    <div class="service-card-body">
-                        <p data-i18n="services.item4Desc">
-                            1-on-1 mentorship with certified specialists who continuously adapt your program based on live wearable feedback.
-                        </p>
-                    </div>
-                </div>
-            </div>
         </div>
 
-        <!-- Right Workout Media -->
-        <div class="services-right">
-            <img src="public/assets/images/workout-plank-real.jpg" alt="Athlete training form" class="services-right-img" />
+        <div class="offer-cards">
+            <article class="offer-card">
+                <div class="offer-card-icon" aria-hidden="true"><i class="fas fa-link"></i></div>
+                <h3 data-i18n="offer.card1Title">Works with your wristband</h3>
+                <p data-i18n="offer.card1Desc">No new device to buy: PulsePower connects to the compatible wristband you already use and brings your records together in one place.</p>
+            </article>
+            <article class="offer-card offer-card-rest">
+                <div class="offer-card-icon" aria-hidden="true"><i class="fas fa-chart-simple"></i></div>
+                <h3 data-i18n="offer.card2Title">Clear indicators</h3>
+                <p data-i18n="offer.card2Desc">Your heart rate variability (HRV), sleep and effort turned into easy-to-read indicators, each with its reference period and last update.</p>
+            </article>
+            <article class="offer-card">
+                <div class="offer-card-icon" aria-hidden="true"><i class="fas fa-robot"></i></div>
+                <h3 data-i18n="offer.card3Title">Personalized AI guidance</h3>
+                <p data-i18n="offer.card3Desc">Suggestions for your training and rest based on your recent data and goals, always presented as guidance you can evaluate, not as certainties.</p>
+            </article>
         </div>
     </div>
 </section>
 
-<!-- ================= How PulsePower Works (5 Steps) ================= -->
-<section class="steps-section" id="steps">
-    <div class="steps-header">
-        <h2 class="section-title-large" data-i18n="steps.title">How PulsePower Works</h2>
-        <p class="section-desc-medium" data-i18n="steps.subtitle">
-            Understand your body through a connected experience. From setting your goals to tracking your progress, PulsePower turns your sleep, strain and recovery data into personalized guidance for your daily routine.
-        </p>
-    </div>
-
-    <div class="steps-grid">
-        <!-- Step 01 -->
-        <div class="step-card step-card-01">
-            <div class="step-top-arch">
-                <div class="step-number-bubble">01</div>
-                <img src="public/assets/images/step-01.svg" alt="Set Your Goals" class="step-illustration" />
-            </div>
-            <div class="step-content">
-                <h3 data-i18n="steps.step1Title">Set Your Goals</h3>
-                <p data-i18n="steps.step1Desc">
-                    Create your profile and tell us about your training, sleep habits and wellbeing goals. PulsePower uses this information to personalize your experience.
+<!-- ================= Features ================= -->
+<section class="features-section" id="features">
+    <!-- Main features -->
+    <div class="services-section">
+        <div class="services-grid">
+            <div class="services-left">
+                <h2 class="section-title-large" data-i18n="features.title">Features</h2>
+                <p class="section-desc-medium" data-i18n="features.subtitle">
+                    Everything you need to understand how your body responds to training and rest.
                 </p>
-            </div>
-        </div>
 
-        <!-- Step 02 -->
-        <div class="step-card step-card-02">
-            <div class="step-top-arch">
-                <div class="step-number-bubble">02</div>
-                <img src="public/assets/images/step-02.svg" alt="Connect Your Wearable" class="step-illustration" />
-            </div>
-            <div class="step-content">
-                <h3 data-i18n="steps.step2Title">Connect Your Wearable</h3>
-                <p data-i18n="steps.step2Desc">
-                    Link your compatible wristband to sync your physiological data. Bring your sleep, strain and recovery records together in one place.
-                </p>
-            </div>
-        </div>
+                <div class="services-accordion-list">
+                    <div class="service-accordion-card active">
+                        <button type="button" class="service-card-header" aria-expanded="true">
+                            <span class="service-card-title">
+                                <i class="fas fa-heart-pulse" aria-hidden="true"></i>
+                                <span data-i18n="features.item1Title">Recovery level</span>
+                            </span>
+                            <span class="service-arrow-btn" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+                        </button>
+                        <div class="service-card-body">
+                            <p data-i18n="features.item1Desc">A daily recovery indicator estimated from your heart rate variability (HRV) and your recent sleep, so you can review how ready you are for today.</p>
+                        </div>
+                    </div>
 
-        <!-- Step 03 -->
-        <div class="step-card step-card-03">
-            <div class="step-top-arch">
-                <div class="step-number-bubble">03</div>
-                <img src="public/assets/images/step-03.svg" alt="Understand Your Body" class="step-illustration" />
-            </div>
-            <div class="step-content">
-                <h3 data-i18n="steps.step3Title">Understand Your Body</h3>
-                <p data-i18n="steps.step3Desc">
-                    Explore your daily indicators through clear summaries. Ask the AI assistant to explain your data and help you understand your patterns.
-                </p>
-            </div>
-        </div>
+                    <div class="service-accordion-card">
+                        <button type="button" class="service-card-header" aria-expanded="false">
+                            <span class="service-card-title">
+                                <i class="fas fa-moon" aria-hidden="true"></i>
+                                <span data-i18n="features.item2Title">Sleep summary</span>
+                            </span>
+                            <span class="service-arrow-btn" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+                        </button>
+                        <div class="service-card-body">
+                            <p data-i18n="features.item2Desc">The duration and recorded patterns of each night, with trends that help you see how your routine affects your rest.</p>
+                        </div>
+                    </div>
 
-        <!-- Step 04 -->
-        <div class="step-card step-card-04">
-            <div class="step-top-arch">
-                <div class="step-number-bubble">04</div>
-                <img src="public/assets/images/step-04.svg" alt="Plan Your Daily Routine" class="step-illustration" />
-            </div>
-            <div class="step-content">
-                <h3 data-i18n="steps.step4Title">Plan Your Daily Routine</h3>
-                <p data-i18n="steps.step4Desc">
-                    Receive personalized suggestions based on your recent data and goals. Use these insights to review your training intensity, rest periods and sleep habits.
-                </p>
-            </div>
-        </div>
+                    <div class="service-accordion-card">
+                        <button type="button" class="service-card-header" aria-expanded="false">
+                            <span class="service-card-title">
+                                <i class="fas fa-bolt" aria-hidden="true"></i>
+                                <span data-i18n="features.item3Title">Strain &amp; activity</span>
+                            </span>
+                            <span class="service-arrow-btn" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+                        </button>
+                        <div class="service-card-body">
+                            <p data-i18n="features.item3Desc">Your recorded physical effort and activity trends, related to your recovery and your personal goals.</p>
+                        </div>
+                    </div>
 
-        <!-- Step 05 -->
-        <div class="step-card step-card-05">
-            <div class="step-top-arch">
-                <div class="step-number-bubble">05</div>
-                <img src="public/assets/images/step-05.svg" alt="Track Your Progress" class="step-illustration" />
-            </div>
-            <div class="step-content">
-                <h3 data-i18n="steps.step5Title">Track Your Progress</h3>
-                <p data-i18n="steps.step5Desc">
-                    Review your trends and progress reports over time. Recognize changes in your habits and adjust your routine as your needs evolve.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
+                    <div class="service-accordion-card">
+                        <button type="button" class="service-card-header" aria-expanded="false">
+                            <span class="service-card-title">
+                                <i class="fas fa-robot" aria-hidden="true"></i>
+                                <span data-i18n="features.item4Title">AI assistant</span>
+                            </span>
+                            <span class="service-arrow-btn" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+                        </button>
+                        <div class="service-card-body">
+                            <p data-i18n="features.item4Desc">Ask questions about your records in everyday language. The assistant explains your data and tells you what is a record, an estimate or a suggestion.</p>
+                        </div>
+                    </div>
 
-<!-- ================= Mid CTA Banner ================= -->
-<section class="cta-banner-section">
-    <div class="cta-banner-box">
-        <h2 data-i18n="ctaBanner.title">Your Transformation Starts Now</h2>
-        <p data-i18n="ctaBanner.subtitle">
-            Your body speaks every day. Our platform translates it. Discover how your sleep, strain and recovery data can help you plan your activities with greater clarity.
-        </p>
-        <a href="#plans" class="btn-primary">
-            <span data-i18n="ctaBanner.btn">Book Your Free Consult</span>
-            <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</section>
+                    <div class="service-accordion-card">
+                        <button type="button" class="service-card-header" aria-expanded="false">
+                            <span class="service-card-title">
+                                <i class="fas fa-bell" aria-hidden="true"></i>
+                                <span data-i18n="features.item5Title">Smart alerts</span>
+                            </span>
+                            <span class="service-arrow-btn" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+                        </button>
+                        <div class="service-card-body">
+                            <p data-i18n="features.item5Desc">Notifications when your records point to possible overtraining or insufficient rest, so you can adjust your plans in time.</p>
+                        </div>
+                    </div>
 
-<!-- ================= Dark Video Feature Section ================= -->
-<section class="video-section-dark" id="features">
-    <div class="video-section-header">
-        <h2 data-i18n="videoSection.title">How PulsePower Works</h2>
-    </div>
-
-    <div class="video-grid">
-        <!-- Video Player Placeholder -->
-        <div class="video-player-container video-placeholder">
-            <div class="youtube-play-link">
-                <div class="youtube-play-btn">
-                    <i class="fas fa-play"></i>
+                    <div class="service-accordion-card">
+                        <button type="button" class="service-card-header" aria-expanded="false">
+                            <span class="service-card-title">
+                                <i class="fas fa-file-pdf" aria-hidden="true"></i>
+                                <span data-i18n="features.item6Title">Progress reports</span>
+                            </span>
+                            <span class="service-arrow-btn" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+                        </button>
+                        <div class="service-card-body">
+                            <p data-i18n="features.item6Desc">Compare periods and download PDF reports to follow how your sleep, strain and recovery evolve over time.</p>
+                        </div>
+                    </div>
                 </div>
-                <span class="youtube-play-text">Watch Video</span>
+
+                <a href="#plans" class="features-plans-link">
+                    <span data-i18n="features.plansLink">Compare the plans to see what each one includes</span>
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <div class="services-right">
+                <img src="public/assets/images/workout-plank-real.jpg" alt="Person doing a plank exercise" data-i18n-alt="features.imageAlt" class="services-right-img" />
             </div>
         </div>
+    </div>
 
-        <!-- Interactive Feature Tabs -->
-        <div class="video-tabs-list">
-            <div class="video-feature-tab active" data-tab="tab1">
-                <h3 data-i18n="videoSection.tab1">Physiological Monitoring</h3>
-                <i class="fas fa-chevron-right"></i>
+    <!-- How PulsePower Works (5 steps) -->
+    <div class="steps-section" id="steps">
+        <div class="steps-header">
+            <h3 class="section-subtitle" data-i18n="steps.title">How PulsePower Works</h3>
+            <p class="section-desc-medium" data-i18n="steps.subtitle">
+                Understand your body through a connected experience. From setting your goals to tracking your progress, PulsePower turns your sleep, strain and recovery data into personalized guidance for your daily routine.
+            </p>
+        </div>
+
+        <ol class="steps-grid">
+            <li class="step-card step-card-01">
+                <div class="step-top-arch">
+                    <div class="step-number-bubble" aria-hidden="true">01</div>
+                    <img src="public/assets/images/step-01.svg" alt="" class="step-illustration" />
+                </div>
+                <div class="step-content">
+                    <h4 data-i18n="steps.step1Title">Set Your Goals</h4>
+                    <p data-i18n="steps.step1Desc">Create your profile and tell us about your training, sleep habits and wellbeing goals. PulsePower uses this information to personalize your experience.</p>
+                </div>
+            </li>
+
+            <li class="step-card step-card-02">
+                <div class="step-top-arch">
+                    <div class="step-number-bubble" aria-hidden="true">02</div>
+                    <img src="public/assets/images/step-02.svg" alt="" class="step-illustration" />
+                </div>
+                <div class="step-content">
+                    <h4 data-i18n="steps.step2Title">Connect Your Wearable</h4>
+                    <p data-i18n="steps.step2Desc">Link your compatible wristband to sync your physiological data. Bring your sleep, strain and recovery records together in one place.</p>
+                </div>
+            </li>
+
+            <li class="step-card step-card-03">
+                <div class="step-top-arch">
+                    <div class="step-number-bubble" aria-hidden="true">03</div>
+                    <img src="public/assets/images/step-03.svg" alt="" class="step-illustration" />
+                </div>
+                <div class="step-content">
+                    <h4 data-i18n="steps.step3Title">Understand Your Body</h4>
+                    <p data-i18n="steps.step3Desc">Explore your daily indicators through clear summaries. Ask the AI assistant to explain your data and help you understand your patterns.</p>
+                </div>
+            </li>
+
+            <li class="step-card step-card-04">
+                <div class="step-top-arch">
+                    <div class="step-number-bubble" aria-hidden="true">04</div>
+                    <img src="public/assets/images/step-04.svg" alt="" class="step-illustration" />
+                </div>
+                <div class="step-content">
+                    <h4 data-i18n="steps.step4Title">Plan Your Daily Routine</h4>
+                    <p data-i18n="steps.step4Desc">Receive personalized suggestions based on your recent data and goals. Use these insights to review your training intensity, rest periods and sleep habits.</p>
+                </div>
+            </li>
+
+            <li class="step-card step-card-05">
+                <div class="step-top-arch">
+                    <div class="step-number-bubble" aria-hidden="true">05</div>
+                    <img src="public/assets/images/step-05.svg" alt="" class="step-illustration" />
+                </div>
+                <div class="step-content">
+                    <h4 data-i18n="steps.step5Title">Track Your Progress</h4>
+                    <p data-i18n="steps.step5Desc">Review your trends and progress reports over time. Recognize changes in your habits and adjust your routine as your needs evolve.</p>
+                </div>
+            </li>
+        </ol>
+    </div>
+
+    <!-- See PulsePower in action -->
+    <div class="video-section-dark">
+        <div class="video-section-header">
+            <h3 data-i18n="videoSection.title">See PulsePower in action</h3>
+        </div>
+
+        <div class="video-grid">
+            <!-- Video Player Placeholder -->
+            <div class="video-player-container video-placeholder">
+                <div class="youtube-play-link">
+                    <div class="youtube-play-btn" aria-hidden="true">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <span class="youtube-play-text" data-i18n="videoSection.placeholder">Product video coming soon</span>
+                </div>
             </div>
 
-            <div class="video-feature-tab" data-tab="tab2">
-                <h3 data-i18n="videoSection.tab2">Sleep & Recovery</h3>
-                <i class="fas fa-chevron-right"></i>
-            </div>
+            <!-- Interactive Feature Tabs -->
+            <div class="video-tabs-list">
+                <button type="button" class="video-feature-tab active" data-tab="tab1" aria-pressed="true">
+                    <span class="video-feature-tab-title" data-i18n="videoSection.tab1">Daily overview</span>
+                    <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                </button>
 
-            <div class="video-feature-tab" data-tab="tab3">
-                <h3 data-i18n="videoSection.tab3">AI Recommendations</h3>
-                <i class="fas fa-chevron-right"></i>
-            </div>
+                <button type="button" class="video-feature-tab" data-tab="tab2" aria-pressed="false">
+                    <span class="video-feature-tab-title" data-i18n="videoSection.tab2">Sleep &amp; recovery</span>
+                    <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                </button>
 
-            <div class="video-feature-tab" data-tab="tab4">
-                <h3 data-i18n="videoSection.tab4">Progress Reports</h3>
-                <i class="fas fa-chevron-right"></i>
-            </div>
+                <button type="button" class="video-feature-tab" data-tab="tab3" aria-pressed="false">
+                    <span class="video-feature-tab-title" data-i18n="videoSection.tab3">AI assistant</span>
+                    <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                </button>
 
-            <div class="video-active-desc-box">
-                <p id="video-feature-desc" data-i18n="videoSection.tab1Desc">
-                    Continuous real-time tracking of heart rate variability, skin temperature, and daily strain metrics.
-                </p>
+                <button type="button" class="video-feature-tab" data-tab="tab4" aria-pressed="false">
+                    <span class="video-feature-tab-title" data-i18n="videoSection.tab4">Progress reports</span>
+                    <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                </button>
+
+                <div class="video-active-desc-box" aria-live="polite">
+                    <p id="video-feature-desc" data-i18n="videoSection.tab1Desc">Review your sleep, strain and recovery indicators in one place, with the date and period of each record.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to action -->
+    <div class="cta-banner-section">
+        <div class="cta-banner-box">
+            <h3 data-i18n="ctaBanner.title">Start understanding your body</h3>
+            <p data-i18n="ctaBanner.subtitle">Your body speaks every day. Our platform translates it. Create your account, connect your wristband and discover what your sleep, strain and recovery data say about your routine.</p>
+            <div class="cta-banner-actions">
+                <a href="#plans" class="btn-primary">
+                    <span data-i18n="ctaBanner.ctaPrimary">Create Account</span>
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </a>
+                <a href="#plans" class="btn-secondary" data-i18n="ctaBanner.ctaSecondary">View Plans</a>
             </div>
         </div>
     </div>
@@ -611,9 +650,9 @@
         <div class="footer-col">
             <h4 data-i18n="footer.servicesTitle">Services</h4>
             <ul>
-                <li><a href="#services" data-i18n="footer.s1">Recovery insights</a></li>
-                <li><a href="#services" data-i18n="footer.s2">Sleep quality</a></li>
-                <li><a href="#services" data-i18n="footer.s3">Daily strain</a></li>
+                <li><a href="#features" data-i18n="footer.s1">Recovery insights</a></li>
+                <li><a href="#features" data-i18n="footer.s2">Sleep quality</a></li>
+                <li><a href="#features" data-i18n="footer.s3">Daily strain</a></li>
                 <li><a href="#features" data-i18n="footer.s4">AI assistant</a></li>
                 <li><a href="#features" data-i18n="footer.s5">Progress reports</a></li>
             </ul>

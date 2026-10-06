@@ -8,69 +8,84 @@
         signup: "Sign Up"
     },
     hero: {
-        tag: "Transform Your Body, Optimize Your",
-        watermark: "HEALTH",
-        subtitle: "PulsePower turns your sleep, strain and recovery data into clear insights to help you plan your training and rest.",
-        cta: "Start Your Transformation",
+        tag: "Your body speaks every day. Our platform translates it.",
+        valueProp: "You can't perform better without recovering better. Know yourself first.",
+        subtitle: "PulsePower connects to the wristband you already use and turns your sleep, strain and recovery data into clear insights to help you plan your training and rest.",
+        ctaPrimary: "Create Account",
+        ctaSecondary: "View Plans",
+        imageAlt: "Athlete during a training session",
         cardTitle: "Sleep, strain and recovery",
-        cardBadge: "AI Insights"
+        metricSleep: "Sleep",
+        metricStrain: "Strain",
+        metricRecovery: "Recovery",
+        cardBadge: "AI-powered insights"
     },
     marquee: {
-        item1: "Evidence-Based Coaching",
-        item2: "Hormone & Gut Health Optimization",
-        item3: "Physique Transformation Experts"
+        item1: "Sleep",
+        item2: "Strain",
+        item3: "Recovery",
+        item4: "AI Assistant",
+        item5: "Progress Reports"
     },
-    science: {
-        title: "Science-Backed, Results Driven Coaching",
-        subtitle: "Turn your physiological data into clear guidance. Understand your habits and find a balance between activity and rest with insights tailored to you.",
-        cta: "Meet the Team"
+    offer: {
+        title: "What We Offer",
+        desc: "PulsePower connects to the wristband you already use and turns your physiological signals into clear indicators of sleep, strain and recovery, with personalized guidance for your training and rest.",
+        card1Title: "Works with your wristband",
+        card1Desc: "No new device to buy: PulsePower connects to the compatible wristband you already use and brings your records together in one place.",
+        card2Title: "Clear indicators",
+        card2Desc: "Your heart rate variability (HRV), sleep and effort turned into easy-to-read indicators, each with its reference period and last update.",
+        card3Title: "Personalized AI guidance",
+        card3Desc: "Suggestions for your training and rest based on your recent data and goals, always presented as guidance you can evaluate, not as certainties."
     },
-    services: {
-        title: "Our Coaching Services",
-        subtitle: "PulsePower brings your sleep, strain and recovery records together to support informed decisions about your daily routine.",
-        item1Title: "Detailed Assessment",
-        item1Desc: "Comprehensive biometric analysis, metabolic baseline evaluation, and health biomarker profiling to pinpoint your unique physiological starting point.",
-        item2Title: "Custom Goal-Aligned Plan",
-        item2Desc: "Periodized training programs and nutritional guidance engineered specifically around your recovery capacity and personal goals.",
-        item3Title: "Root Cause Lab & Biomarker Analysis",
-        item3Desc: "In-depth investigation of hormonal balances, gut microbiome vitality, and micronutrient status to resolve hidden barriers to progress.",
-        item4Title: "Dedicated Coaching",
-        item4Desc: "1-on-1 mentorship with certified specialists who continuously adapt your program based on live wearable feedback."
+    features: {
+        title: "Features",
+        subtitle: "Everything you need to understand how your body responds to training and rest.",
+        item1Title: "Recovery level",
+        item1Desc: "A daily recovery indicator estimated from your heart rate variability (HRV) and your recent sleep, so you can review how ready you are for today.",
+        item2Title: "Sleep summary",
+        item2Desc: "The duration and recorded patterns of each night, with trends that help you see how your routine affects your rest.",
+        item3Title: "Strain & activity",
+        item3Desc: "Your recorded physical effort and activity trends, related to your recovery and your personal goals.",
+        item4Title: "AI assistant",
+        item4Desc: "Ask questions about your records in everyday language. The assistant explains your data and tells you what is a record, an estimate or a suggestion.",
+        item5Title: "Smart alerts",
+        item5Desc: "Notifications when your records point to possible overtraining or insufficient rest, so you can adjust your plans in time.",
+        item6Title: "Progress reports",
+        item6Desc: "Compare periods and download PDF reports to follow how your sleep, strain and recovery evolve over time.",
+        plansLink: "Compare the plans to see what each one includes",
+        imageAlt: "Person doing a plank exercise"
     },
     steps: {
         title: "How PulsePower Works",
         subtitle: "Understand your body through a connected experience. From setting your goals to tracking your progress, PulsePower turns your sleep, strain and recovery data into personalized guidance for your daily routine.",
-        step1Num: "01",
         step1Title: "Set Your Goals",
         step1Desc: "Create your profile and tell us about your training, sleep habits and wellbeing goals. PulsePower uses this information to personalize your experience.",
-        step2Num: "02",
         step2Title: "Connect Your Wearable",
         step2Desc: "Link your compatible wristband to sync your physiological data. Bring your sleep, strain and recovery records together in one place.",
-        step3Num: "03",
         step3Title: "Understand Your Body",
         step3Desc: "Explore your daily indicators through clear summaries. Ask the AI assistant to explain your data and help you understand your patterns.",
-        step4Num: "04",
         step4Title: "Plan Your Daily Routine",
         step4Desc: "Receive personalized suggestions based on your recent data and goals. Use these insights to review your training intensity, rest periods and sleep habits.",
-        step5Num: "05",
         step5Title: "Track Your Progress",
         step5Desc: "Review your trends and progress reports over time. Recognize changes in your habits and adjust your routine as your needs evolve."
     },
-    ctaBanner: {
-        title: "Your Transformation Starts Now",
-        subtitle: "Your body speaks every day. Our platform translates it. Discover how your sleep, strain and recovery data can help you plan your activities with greater clarity.",
-        btn: "Book Your Free Consult"
-    },
     videoSection: {
-        title: "How PulsePower Works",
-        tab1: "Physiological Monitoring",
-        tab2: "Sleep & Recovery",
-        tab3: "AI Recommendations",
-        tab4: "Progress Reports",
-        tab1Desc: "Continuous real-time tracking of heart rate variability, skin temperature, and daily strain metrics.",
-        tab2Desc: "Deep analysis of sleep stages, circadian alignment, and autonomic recovery restoration scores.",
-        tab3Desc: "Intelligent coaching engine adapting training loads and active rest protocols specifically to your daily state.",
-        tab4Desc: "Longitudinal biomarker trends, weekly fatigue indexes, and actionable reports exportable for your coaches."
+        title: "See PulsePower in action",
+        placeholder: "Product video coming soon",
+        tab1: "Daily overview",
+        tab2: "Sleep & recovery",
+        tab3: "AI assistant",
+        tab4: "Progress reports",
+        tab1Desc: "Review your sleep, strain and recovery indicators in one place, with the date and period of each record.",
+        tab2Desc: "See how your nights relate to your recovery level and which habits may be affecting your rest.",
+        tab3Desc: "Ask about your data and get clear explanations and suggestions adapted to your goals.",
+        tab4Desc: "Follow your trends over weeks and months and download them as PDF reports."
+    },
+    ctaBanner: {
+        title: "Start understanding your body",
+        subtitle: "Your body speaks every day. Our platform translates it. Create your account, connect your wristband and discover what your sleep, strain and recovery data say about your routine.",
+        ctaPrimary: "Create Account",
+        ctaSecondary: "View Plans"
     },
     team: {
         heading: "Our Team",
