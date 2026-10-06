@@ -137,10 +137,10 @@
         subtitle: "The Software Engineering students behind PulsePower.",
         role: "Software Engineering Student",
         member1Desc: "Software Engineering student; organized, responsible and results-oriented. Passionate about continuous learning and keeping up with new technologies, methodologies and best practices. Adapts easily to different environments and aims to provide efficient, proactive solutions. Knowledge of C++, Python, HTML and PrimeVue.",
-        member2Desc: "Software Engineering student. Disciplined and consistent, qualities developed through swimming that help him stay focused and overcome obstacles. Focused on solving problems methodically and with attention to detail.",
-        member3Desc: "Software Engineering student who wants to develop new skills and expand his knowledge in artificial intelligence. Knowledge of C++, HTML and CSS, and of clean code practices.",
+        member2Desc: "Software Engineering student. Disciplined and consistent, qualities developed through swimming that help maintain focus and overcome obstacles. Focused on solving problems methodically and with attention to detail.",
+        member3Desc: "Software Engineering student who wants to develop new skills and expand knowledge in artificial intelligence. Knowledge of C++, HTML and CSS, and of clean code practices.",
         member4Desc: "Software Engineering student at Universidad Peruana de Ciencias Aplicadas, currently in the 8th term. Passionate about data analysis, databases and designing interfaces with an efficient user experience. Analytical and creative. Knowledge of Python, React, Node.js, MySQL, SQL Management, Swift, C# and C++.",
-        member5Desc: "Responsible and proactive Software Engineering student with a solid technical foundation in C++. Stands out for contributing creative solutions and for his commitment to continuous learning in professional environments."
+        member5Desc: "Responsible and proactive Software Engineering student with a solid technical foundation in C++. Stands out for contributing creative solutions and for a commitment to continuous learning in professional environments."
     },
     plans: {
         heading: "A Plan for Your Wellbeing",
