@@ -1942,6 +1942,20 @@ h1, h2, h3 {
 /* ==========================================================================
    Legal Pages (TOS & Privacy)
    ========================================================================== */
+.legal-page {
+  background-color: var(--color-background);
+}
+
+.legal-footer {
+  padding: var(--space-10) var(--space-gutter);
+  text-align: center;
+}
+
+.legal-footer p {
+  font-size: var(--fs-small);
+  color: var(--color-text-on-dark-muted);
+}
+
 .legal-wrapper {
   max-width: 860px;
   margin: calc(var(--header-height) + var(--space-10)) auto var(--space-16);
@@ -2147,6 +2161,13 @@ h1, h2, h3 {
   }
   .nav-actions .btn-login {
     display: none;
+  }
+  .legal-wrapper {
+    margin-left: var(--space-4);
+    margin-right: var(--space-4);
+  }
+  .legal-wrapper h1 {
+    font-size: 30px;
   }
 }
 

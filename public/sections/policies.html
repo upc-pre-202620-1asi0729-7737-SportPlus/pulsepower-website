@@ -1,74 +1,95 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy – PulsePower</title>
-  <meta name="description" content="Privacy Policy and health telemetry data practices for PulsePower." />
-  <link rel="icon" type="image/svg+xml" href="../assets/images/pulsepower-logo.svg" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <link rel="stylesheet" href="../assets/styles/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="legal.privacy.pageTitle">Privacy Policy | PulsePower</title>
+    <meta name="description" content="How PulsePower collects, uses and protects your personal and physiological data." data-i18n-content="legal.privacy.metaDescription" />
+    <meta name="author" content="PulsePower Team" />
+    <link rel="icon" type="image/png" href="../assets/images/pulsepower-logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="../assets/styles/style.css" />
 </head>
-<body style="background-color: #F8FAFC;">
+<body class="legal-page">
 
-  <header class="header scrolled">
+<header class="header scrolled">
     <div class="nav-container">
-      <a href="../../index.html" class="brand-logo">
-        <img src="../assets/images/pulsepower-logo.svg" alt="PulsePower Logo" />
-      </a>
-      <div class="nav-actions">
-        <a href="../../index.html" class="btn-signup">← Volver al Inicio / Back to Home</a>
-      </div>
+        <a href="../../index.html" class="brand-logo" aria-label="PulsePower, back to the home page" data-i18n-aria-label="legal.logoLabel">
+            <img src="../assets/images/pulsepower-logo.png" alt="PulsePower" />
+        </a>
+        <div class="nav-actions">
+            <div class="navbar-lang-switch" role="group" aria-label="Language" data-i18n-aria-label="nav.languageLabel">
+                <button type="button" class="lang-opt active" data-lang="en" lang="en" aria-label="English">EN</button>
+                <div class="switch-track" aria-hidden="true">
+                    <div class="switch-thumb"></div>
+                </div>
+                <button type="button" class="lang-opt" data-lang="es" lang="es" aria-label="Español">ES</button>
+            </div>
+            <a href="../../index.html" class="btn-signup" data-i18n="legal.backHome">Back to Home</a>
+        </div>
     </div>
-  </header>
+</header>
 
-  <main class="legal-wrapper">
+<main class="legal-wrapper">
     <a href="../../index.html" class="legal-back-link">
-      <i class="fas fa-arrow-left"></i> Volver a PulsePower
+        <i class="fas fa-arrow-left" aria-hidden="true"></i>
+        <span data-i18n="legal.backLink">Back to PulsePower</span>
     </a>
 
-    <h1>Política de Privacidad / Privacy Policy</h1>
-    <span class="legal-date">Última actualización: Septiembre 2026 | Last updated: September 2026</span>
+    <h1 data-i18n="legal.privacy.title">Privacy Policy</h1>
+    <span class="legal-date" data-i18n="legal.updated">Last updated: October 2026</span>
 
-    <p>
-      En <strong>PulsePower</strong> nos comprometemos firmemente a proteger la privacidad y la seguridad de los datos biométricos y personales de nuestros usuarios. Esta política describe cómo recopilamos, procesamos y salvaguardamos su información.
+    <p data-i18n-html="legal.privacy.intro">
+        At <strong>PulsePower</strong> we are committed to protecting the privacy and security of our users' personal and physiological data. This policy describes how we collect, process and safeguard your information.
     </p>
 
-    <h2>1. Información que Recopilamos</h2>
-    <p>Al utilizar PulsePower, podemos recopilar:</p>
+    <h2 data-i18n="legal.privacy.s1Title">1. Information We Collect</h2>
+    <p data-i18n="legal.privacy.s1Text">When you use PulsePower, we may collect:</p>
     <ul>
-      <li><strong>Información de perfil:</strong> Nombre, dirección de correo electrónico, edad, peso y objetivos de entrenamiento.</li>
-      <li><strong>Datos telemétricos y de sensores:</strong> Frecuencia cardíaca (FC), variabilidad de la frecuencia cardíaca (VFC), horas y fases de sueño, temperatura estimada de la piel y niveles de esfuerzo diario sincronizados desde dispositivos compatibles.</li>
-      <li><strong>Registros de interacción:</strong> Consultas realizadas al asistente de inteligencia artificial y retroalimentación sobre entrenamientos.</li>
+        <li data-i18n-html="legal.privacy.s1Item1"><strong>Profile information:</strong> name, email address, age, weight and training or wellbeing goals.</li>
+        <li data-i18n-html="legal.privacy.s1Item2"><strong>Wristband data:</strong> heart rate, heart rate variability (HRV), sleep duration and phases, and daily effort levels synchronized from compatible devices.</li>
+        <li data-i18n-html="legal.privacy.s1Item3"><strong>Interaction records:</strong> questions asked to the artificial intelligence assistant and feedback about your activities.</li>
     </ul>
 
-    <h2>2. Finalidad del Tratamiento de Datos</h2>
-    <p>La información recopilada se utiliza exclusivamente para:</p>
+    <h2 data-i18n="legal.privacy.s2Title">2. Purpose of Data Processing</h2>
+    <p data-i18n="legal.privacy.s2Text">The information collected is used exclusively to:</p>
     <ul>
-      <li>Generar resúmenes, gráficos y tendencias visuales sobre su estado físico y recuperación.</li>
-      <li>Proporcionar sugerencias adaptativas de descanso e intensidad de entrenamiento.</li>
-      <li>Mejorar el rendimiento del modelo algorítmico y la experiencia de usuario dentro de la plataforma.</li>
+        <li data-i18n="legal.privacy.s2Item1">Generate summaries, charts and trends about your sleep, strain and recovery.</li>
+        <li data-i18n="legal.privacy.s2Item2">Provide guidance on rest and training intensity adapted to your goals.</li>
+        <li data-i18n="legal.privacy.s2Item3">Improve the platform's models and user experience.</li>
     </ul>
 
-    <h2>3. Confidencialidad y Seguridad</h2>
-    <p>
-      Implementamos medidas de cifrado en tránsito (TLS/HTTPS) y almacenamiento seguro. No vendemos, alquilamos ni transferimos sus datos biométricos personales a terceros con fines publicitarios o comerciales sin su consentimiento explícito.
+    <h2 data-i18n="legal.privacy.s3Title">3. Confidentiality and Security</h2>
+    <p data-i18n="legal.privacy.s3Text">
+        We use encryption in transit (TLS/HTTPS) and secure storage. We do not sell, rent or transfer your personal physiological data to third parties for advertising or commercial purposes without your explicit consent.
     </p>
 
-    <h2>4. Derechos del Usuario (ARCO)</h2>
-    <p>
-      Usted tiene derecho a acceder, rectificar, cancelar u oponerse al tratamiento de sus datos personales en cualquier momento. También puede solicitar la eliminación completa de su cuenta e historial biométrico escribiendo a nuestro equipo.
+    <h2 data-i18n="legal.privacy.s4Title">4. User Rights (ARCO)</h2>
+    <p data-i18n="legal.privacy.s4Text">
+        You have the right to access, rectify, cancel or object to the processing of your personal data at any time. You can also request the complete deletion of your account and physiological history by writing to our team.
     </p>
 
-    <h2>5. Contacto sobre Privacidad</h2>
-    <p>
-      Si tiene dudas sobre nuestras políticas de privacidad y protección de datos, contáctenos en: <strong>privacy@pulsepower.io</strong>.
+    <h2 data-i18n="legal.privacy.s5Title">5. Privacy Contact</h2>
+    <p data-i18n-html="legal.privacy.s5Text">
+        If you have questions about our privacy and data protection practices, contact us at: <strong>privacy@pulsepower.io</strong>.
     </p>
-  </main>
+</main>
 
-  <footer class="footer" style="padding: 40px 24px; text-align: center;">
-    <p style="color: #94A3B8; font-size: 14px;">© 2026 PulsePower. Academic Project.</p>
-  </footer>
+<footer class="footer legal-footer">
+    <p data-i18n="footer.copyright">© 2026 PulsePower by SportPlus. Academic project.</p>
+</footer>
 
+<!-- Floating Language Switcher -->
+<div class="floating-lang-switcher" role="group" aria-label="Language" data-i18n-aria-label="nav.languageLabel">
+    <button type="button" class="floating-lang-btn active" data-lang="en" lang="en" aria-label="English">EN</button>
+    <button type="button" class="floating-lang-btn" data-lang="es" lang="es" aria-label="Español">ES</button>
+</div>
+
+<script src="../assets/scripts/translations/en.js"></script>
+<script src="../assets/scripts/translations/es.js"></script>
+<script src="../assets/scripts/main.js"></script>
 </body>
 </html>
