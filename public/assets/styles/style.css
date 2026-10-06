@@ -1832,29 +1832,6 @@ h1, h2, h3 {
   object-fit: contain;
 }
 
-.footer-social-links {
-  display: flex;
-  align-items: center;
-  gap: var(--space-3);
-}
-
-.social-circle-btn {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: var(--color-secondary);
-  color: var(--color-primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 17px;
-}
-
-.social-circle-btn:hover {
-  transform: translateY(-3px);
-  background: var(--color-white);
-}
-
 .footer-links-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -1863,7 +1840,7 @@ h1, h2, h3 {
   margin: 0 auto var(--space-12);
 }
 
-.footer-col h4 {
+.footer-col h3 {
   font-size: var(--fs-body-lg);
   font-weight: 600;
   color: var(--color-white);
