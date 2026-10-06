@@ -97,7 +97,7 @@
         basicSub: "Your daily insights in one place",
         basicPriceMonthly: "$19",
         basicPriceMonthlyUnit: "/per month",
-        basicPriceAnnual: "$180",
+        basicPriceAnnual: "$182",
         basicPriceAnnualUnit: "/per year",
         basicCta: "Select Basic",
         basicF1: "Health dashboard",

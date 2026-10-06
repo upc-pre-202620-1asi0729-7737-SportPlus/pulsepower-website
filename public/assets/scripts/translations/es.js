@@ -98,7 +98,7 @@
         basicSub: "Tus perspectivas diarias en un solo lugar",
         basicPriceMonthly: "$19",
         basicPriceMonthlyUnit: "/por mes",
-        basicPriceAnnual: "$180",
+        basicPriceAnnual: "$182",
         basicPriceAnnualUnit: "/por año",
         basicCta: "Elegir Básico",
         basicF1: "Panel de control de salud",
