@@ -2127,6 +2127,19 @@ h1, h2, h3 {
   .benefit-list {
     grid-template-columns: 1fr;
   }
+  .segment-toggle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    border-radius: var(--radius-md);
+  }
+  .segment-toggle-btn {
+    justify-content: center;
+    padding: var(--space-3) var(--space-2);
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
   .segment-panel {
     padding: var(--space-6);
   }
