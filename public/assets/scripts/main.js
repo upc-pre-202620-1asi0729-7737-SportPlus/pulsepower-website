@@ -1,6 +1,27 @@
 // PulsePower - Interactive Scripts & i18n Controller
 
-let currentLang = localStorage.getItem('pulsepower-lang') || 'es';
+// WebApp entry points (US15). Update WEBAPP_URL and the paths when the WebApp is deployed.
+var WEBAPP_URL = 'https://upc-pre-202620-1asi0729-7737-sportplus.github.io/pulsepower-website/';
+var WEBAPP_PATHS = {
+    'sign-in': '',   // e.g. 'sign-in'
+    'register': ''   // e.g. 'sign-up'
+};
+var currentBilling = 'monthly';
+
+var SUPPORTED_LANGS = ['en', 'es'];
+
+// Language priority: ?lang= in the URL, then the saved preference, then English (default)
+function getInitialLang() {
+    var urlLang = new URLSearchParams(window.location.search).get('lang');
+    if (SUPPORTED_LANGS.indexOf(urlLang) !== -1) {
+        localStorage.setItem('pulsepower-lang', urlLang);
+        return urlLang;
+    }
+    var savedLang = localStorage.getItem('pulsepower-lang');
+    return SUPPORTED_LANGS.indexOf(savedLang) !== -1 ? savedLang : 'en';
+}
+
+let currentLang = getInitialLang();
 
 // Flatten nested object: { "nav": { "home": "Inicio" } } -> { "nav.home": "Inicio" }
 function flattenTranslations(obj, prefix) {
@@ -16,6 +37,30 @@ function flattenTranslations(obj, prefix) {
     }, {});
 }
 
+
+// Build WebApp links that keep the visitor's language (and plan / segment when present)
+function buildWebAppUrl(target, lang, extraParams) {
+    var url = new URL(WEBAPP_PATHS[target] || '', WEBAPP_URL);
+    url.searchParams.set('lang', lang);
+    Object.keys(extraParams).forEach(function (key) {
+        url.searchParams.set(key, extraParams[key]);
+    });
+    return url.toString();
+}
+
+function updateWebAppLinks(lang) {
+    document.querySelectorAll('[data-webapp]').forEach(function (link) {
+        var params = {};
+        if (link.dataset.plan) {
+            params.plan = link.dataset.plan;
+            params.billing = currentBilling;
+        }
+        if (link.dataset.segment) {
+            params.segment = link.dataset.segment;
+        }
+        link.href = buildWebAppUrl(link.dataset.webapp, lang, params);
+    });
+}
 
 function applyTranslations(lang) {
     var source = lang === 'en' ? translationsEN : translationsES;
@@ -44,6 +89,16 @@ function applyTranslations(lang) {
         } else {
             el.textContent = flat[key];
         }
+    });
+
+    // Apply to translatable attributes: [data-i18n-alt], [data-i18n-aria-label], [data-i18n-content]
+    [['data-i18n-alt', 'alt'], ['data-i18n-aria-label', 'aria-label'], ['data-i18n-content', 'content']].forEach(function (pair) {
+        document.querySelectorAll('[' + pair[0] + ']').forEach(function (el) {
+            var key = el.getAttribute(pair[0]);
+            if (flat[key] !== undefined) {
+                el.setAttribute(pair[1], flat[key]);
+            }
+        });
     });
 
     // Apply to [data-i18n-placeholder]
@@ -87,6 +142,16 @@ function applyTranslations(lang) {
         btn.classList.toggle('active', btn.dataset.lang === lang);
     });
 
+    // Keep WebApp links in sync with the selected language
+    updateWebAppLinks(lang);
+
+    // Hamburger button label follows the menu state
+    var menuButton = document.getElementById('menu-btn');
+    if (menuButton) {
+        var isOpen = menuButton.getAttribute('aria-expanded') === 'true';
+        menuButton.setAttribute('aria-label', flat[isOpen ? 'nav.closeMenu' : 'nav.openMenu']);
+    }
+
     // Update HTML lang attribute
     document.documentElement.lang = lang;
 }
@@ -124,16 +189,28 @@ document.addEventListener('DOMContentLoaded', function () {
     var menuBtn = document.getElementById('menu-btn');
     var navbar = document.querySelector('.header .nav-links');
     if (menuBtn && navbar) {
+        var setMenuOpen = function (isOpen) {
+            navbar.classList.toggle('active', isOpen);
+            menuBtn.classList.toggle('fa-times', isOpen);
+            menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            applyTranslations(currentLang);
+        };
+
         menuBtn.addEventListener('click', function () {
-            navbar.classList.toggle('active');
-            menuBtn.classList.toggle('fa-times');
+            setMenuOpen(!navbar.classList.contains('active'));
         });
 
         navbar.querySelectorAll('a').forEach(function (link) {
             link.addEventListener('click', function () {
-                navbar.classList.remove('active');
-                menuBtn.classList.remove('fa-times');
+                setMenuOpen(false);
             });
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && navbar.classList.contains('active')) {
+                setMenuOpen(false);
+                menuBtn.focus();
+            }
         });
     }
 
@@ -147,49 +224,82 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Coaching Services Accordion
+    // Features Accordion (one item open at a time)
     var serviceCards = document.querySelectorAll('.service-accordion-card');
+
+    function setCardOpen(card, isOpen) {
+        card.classList.toggle('active', isOpen);
+        var trigger = card.querySelector('.service-card-header');
+        if (trigger) {
+            trigger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        }
+    }
+
     serviceCards.forEach(function (card) {
         card.addEventListener('click', function () {
             var isAlreadyActive = card.classList.contains('active');
-            serviceCards.forEach(function (c) { c.classList.remove('active'); });
+            serviceCards.forEach(function (c) { setCardOpen(c, false); });
             if (!isAlreadyActive) {
-                card.classList.add('active');
+                setCardOpen(card, true);
             }
         });
     });
     // Default first active
     if (serviceCards.length > 0) {
-        serviceCards[0].classList.add('active');
+        setCardOpen(serviceCards[0], true);
     }
 
     // Video Section Tabs
     var videoTabs = document.querySelectorAll('.video-feature-tab');
     var videoTabContent = document.getElementById('video-feature-desc');
-    var videoIframe = document.getElementById('pulsepower-video-frame');
-
-    var videoEmbeds = {
-        "tab1": "https://www.youtube.com/embed/5qap5aO4i9A?si=pulsepower",
-        "tab2": "https://www.youtube.com/embed/vu7Rlkn2lEc?si=pulsepower",
-        "tab3": "https://www.youtube.com/embed/LpOAo21-778?si=pulsepower",
-        "tab4": "https://www.youtube.com/embed/jNQXAC9IVRw?si=pulsepower"
-    };
-
     videoTabs.forEach(function (tab) {
         tab.addEventListener('click', function () {
-            videoTabs.forEach(function (t) { t.classList.remove('active'); });
+            videoTabs.forEach(function (t) {
+                t.classList.remove('active');
+                t.setAttribute('aria-pressed', 'false');
+            });
             tab.classList.add('active');
+            tab.setAttribute('aria-pressed', 'true');
 
             var tabKey = tab.dataset.tab;
-            if (videoIframe && videoEmbeds[tabKey]) {
-                videoIframe.src = videoEmbeds[tabKey];
-            }
 
             if (videoTabContent) {
                 var transKey = 'videoSection.' + tabKey + 'Desc';
                 videoTabContent.setAttribute('data-i18n', transKey);
                 applyTranslations(currentLang);
             }
+        });
+    });
+
+    // Benefits by Segment Toggle (Athletes / Wellness Seekers)
+    var segmentTabs = Array.prototype.slice.call(document.querySelectorAll('.segment-toggle-btn'));
+
+    function selectSegment(selectedTab, moveFocus) {
+        segmentTabs.forEach(function (tab) {
+            var isSelected = tab === selectedTab;
+            tab.classList.toggle('active', isSelected);
+            tab.setAttribute('aria-selected', isSelected ? 'true' : 'false');
+            tab.setAttribute('tabindex', isSelected ? '0' : '-1');
+            var panel = document.getElementById(tab.getAttribute('aria-controls'));
+            if (panel) {
+                panel.hidden = !isSelected;
+            }
+        });
+        if (moveFocus) {
+            selectedTab.focus();
+        }
+    }
+
+    segmentTabs.forEach(function (tab, index) {
+        tab.addEventListener('click', function () {
+            selectSegment(tab, false);
+        });
+        tab.addEventListener('keydown', function (e) {
+            if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+            e.preventDefault();
+            var step = e.key === 'ArrowRight' ? 1 : -1;
+            var next = segmentTabs[(index + step + segmentTabs.length) % segmentTabs.length];
+            selectSegment(next, true);
         });
     });
 
@@ -201,10 +311,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
     planToggles.forEach(function (btn) {
         btn.addEventListener('click', function () {
-            planToggles.forEach(function (b) { b.classList.remove('active'); });
+            planToggles.forEach(function (b) {
+                b.classList.remove('active');
+                b.setAttribute('aria-pressed', 'false');
+            });
             btn.classList.add('active');
+            btn.setAttribute('aria-pressed', 'true');
 
             var mode = btn.dataset.plan;
+            currentBilling = mode;
+            updateWebAppLinks(currentLang);
             if (mode === 'monthly') {
                 monthlyPrices.forEach(function (el) { el.style.display = 'inline-block'; });
                 annualPrices.forEach(function (el) { el.style.display = 'none'; });

@@ -1,73 +1,94 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Terms of Service – PulsePower</title>
-    <meta name="description" content="Terms of Service and legal agreements for the PulsePower physiological intelligence platform." />
-    <link rel="icon" type="image/svg+xml" href="../assets/images/pulsepower-logo.svg" />
+    <title data-i18n="legal.tos.pageTitle">Terms of Service | PulsePower</title>
+    <meta name="description" content="Terms of Service of the PulsePower physiological intelligence platform." data-i18n-content="legal.tos.metaDescription" />
+    <meta name="author" content="PulsePower Team" />
+    <link rel="icon" type="image/png" href="../assets/images/pulsepower-logo.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" />
     <link rel="stylesheet" href="../assets/styles/style.css" />
 </head>
-<body style="background-color: #F8FAFC;">
+<body class="legal-page">
 
 <header class="header scrolled">
     <div class="nav-container">
-        <a href="../../index.html" class="brand-logo">
-            <img src="../assets/images/pulsepower-logo.svg" alt="PulsePower Logo" />
+        <a href="../../index.html" class="brand-logo" aria-label="PulsePower, back to the home page" data-i18n-aria-label="legal.logoLabel">
+            <img src="../assets/images/pulsepower-logo.png" alt="PulsePower" />
         </a>
         <div class="nav-actions">
-            <a href="../../index.html" class="btn-signup">← Volver al Inicio / Back to Home</a>
+            <div class="navbar-lang-switch" role="group" aria-label="Language" data-i18n-aria-label="nav.languageLabel">
+                <button type="button" class="lang-opt active" data-lang="en" lang="en" aria-label="English">EN</button>
+                <div class="switch-track" aria-hidden="true">
+                    <div class="switch-thumb"></div>
+                </div>
+                <button type="button" class="lang-opt" data-lang="es" lang="es" aria-label="Español">ES</button>
+            </div>
+            <a href="../../index.html" class="btn-signup" data-i18n="legal.backHome">Back to Home</a>
         </div>
     </div>
 </header>
 
 <main class="legal-wrapper">
     <a href="../../index.html" class="legal-back-link">
-        <i class="fas fa-arrow-left"></i> Volver a PulsePower
+        <i class="fas fa-arrow-left" aria-hidden="true"></i>
+        <span data-i18n="legal.backLink">Back to PulsePower</span>
     </a>
 
-    <h1>Términos de Servicio / Terms of Service</h1>
-    <span class="legal-date">Última actualización: Septiembre 2026 | Last updated: September 2026</span>
+    <h1 data-i18n="legal.tos.title">Terms of Service</h1>
+    <span class="legal-date" data-i18n="legal.updated">Last updated: October 2026</span>
 
-    <p>
-        Bienvenido a <strong>PulsePower</strong>, una plataforma de inteligencia fisiológica desarrollada como proyecto académico por estudiantes de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas (UPC). Al acceder o utilizar nuestro sitio web y servicios, usted acepta estos Términos de Servicio.
+    <p data-i18n-html="legal.tos.intro">
+        Welcome to <strong>PulsePower</strong>, a physiological intelligence platform developed by SportPlus as an academic project by Software Engineering students at Universidad Peruana de Ciencias Aplicadas (UPC). By accessing or using our website and services, you agree to these Terms of Service.
     </p>
 
-    <h2>1. Naturaleza del Servicio</h2>
-    <p>
-        PulsePower proporciona herramientas de visualización, análisis de tendencias y orientación de bienestar basadas en datos obtenidos de dispositivos inteligentes (wearables). PulsePower <strong>no es un dispositivo médico ni reemplaza el diagnóstico o tratamiento médico profesional</strong>. Si experimenta síntomas de salud o dudas médicas, consulte siempre a un profesional de la salud calificado.
+    <h2 data-i18n="legal.tos.s1Title">1. Nature of the Service</h2>
+    <p data-i18n-html="legal.tos.s1Text">
+        PulsePower provides visualization tools, trend analysis and wellbeing guidance based on data recorded by the compatible wristband you already use. PulsePower <strong>is not a medical device and does not replace professional medical diagnosis or treatment</strong>. Its indicators are estimates and its recommendations are guidance. If you have health symptoms or medical questions, always consult a qualified health professional.
     </p>
 
-    <h2>2. Cuentas de Usuario</h2>
-    <p>
-        Al registrarse en PulsePower, usted se compromete a proporcionar información precisa y verídica sobre su perfil, y a mantener la confidencialidad de sus credenciales de acceso. Cada usuario es responsable de todas las actividades realizadas bajo su cuenta.
+    <h2 data-i18n="legal.tos.s2Title">2. User Accounts</h2>
+    <p data-i18n="legal.tos.s2Text">
+        When you register on PulsePower, you agree to provide accurate and truthful information in your profile and to keep your access credentials confidential. Each user is responsible for all activity carried out under their account.
     </p>
 
-    <h2>3. Propiedad Intelectual y Proyecto Académico</h2>
-    <p>
-        Todo el código fuente, diseño, logotipos, elementos gráficos e interfaces de PulsePower pertenecen a sus creadores y están protegidos por leyes de propiedad intelectual en el marco de proyectos universitarios. Queda prohibida su reproducción no autorizada con fines comerciales directos sin el consentimiento explícito del equipo.
+    <h2 data-i18n="legal.tos.s3Title">3. Intellectual Property and Academic Project</h2>
+    <p data-i18n="legal.tos.s3Text">
+        All source code, design, logos, graphic elements and interfaces of PulsePower belong to their creators and are protected by intellectual property laws within the framework of university projects. Unauthorized reproduction for direct commercial purposes without the explicit consent of the team is prohibited.
     </p>
 
-    <h2>4. Planes y Suscripciones</h2>
-    <p>
-        Los planes Basic y Pro descritos en la plataforma representan niveles de servicio en fase de prototipo y desarrollo funcional. La disponibilidad de funciones puede variar conforme evoluciona el ciclo de vida del software.
+    <h2 data-i18n="legal.tos.s4Title">4. Plans and Subscriptions</h2>
+    <p data-i18n="legal.tos.s4Text">
+        The Basic and Pro plans described on the platform represent service levels in a prototype and functional development phase. Feature availability may change as the software evolves.
     </p>
 
-    <h2>5. Limitación de Responsabilidad</h2>
-    <p>
-        PulsePower y sus desarrolladores no asumen responsabilidad alguna por lesiones físicas, sobreentrenamiento o decisiones de salud tomadas exclusivamente con base en las sugerencias generadas por la plataforma o sus motores de inteligencia artificial.
+    <h2 data-i18n="legal.tos.s5Title">5. Limitation of Liability</h2>
+    <p data-i18n="legal.tos.s5Text">
+        PulsePower and its developers are not responsible for physical injuries, overtraining or health decisions made solely on the basis of the suggestions generated by the platform or its artificial intelligence features.
     </p>
 
-    <h2>6. Contacto</h2>
-    <p>
-        Para consultas relativas a estos términos, puede escribir a: <strong>support@pulsepower.io</strong>.
+    <h2 data-i18n="legal.tos.s6Title">6. Contact</h2>
+    <p data-i18n-html="legal.tos.s6Text">
+        For questions about these terms, you can write to: <strong>support@pulsepower.io</strong>.
     </p>
 </main>
 
-<footer class="footer" style="padding: 40px 24px; text-align: center;">
-    <p style="color: #94A3B8; font-size: 14px;">© 2026 PulsePower. Academic Project.</p>
+<footer class="footer legal-footer">
+    <p data-i18n="footer.copyright">© 2026 PulsePower by SportPlus. Academic project.</p>
 </footer>
 
+<!-- Floating Language Switcher -->
+<div class="floating-lang-switcher" role="group" aria-label="Language" data-i18n-aria-label="nav.languageLabel">
+    <button type="button" class="floating-lang-btn active" data-lang="en" lang="en" aria-label="English">EN</button>
+    <button type="button" class="floating-lang-btn" data-lang="es" lang="es" aria-label="Español">ES</button>
+</div>
+
+<script src="../assets/scripts/translations/en.js"></script>
+<script src="../assets/scripts/translations/es.js"></script>
+<script src="../assets/scripts/main.js"></script>
 </body>
 </html>
