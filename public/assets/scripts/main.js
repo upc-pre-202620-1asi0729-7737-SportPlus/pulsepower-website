@@ -1,10 +1,10 @@
 // PulsePower - Interactive Scripts & i18n Controller
 
 // WebApp entry points (US15). Update WEBAPP_URL and the paths when the WebApp is deployed.
-var WEBAPP_URL = 'https://upc-pre-202620-1asi0729-7737-sportplus.github.io/pulsepower-website/';
+var WEBAPP_URL = 'https://pulsepower-ten.vercel.app/';
 var WEBAPP_PATHS = {
-    'sign-in': '',   // e.g. 'sign-in'
-    'register': ''   // e.g. 'sign-up'
+    'sign-in': 'sign-in',
+    'register': 'sign-up'
 };
 var currentBilling = 'monthly';
 
