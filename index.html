@@ -321,14 +321,21 @@
 
     <div class="video-grid">
         <div class="video-player-container">
-            <iframe
-                src="https://www.youtube.com/embed/PeENrbJvSIY"
-                title="PulsePower"
-                loading="lazy"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-            ></iframe>
+            <a class="youtube-play-link youtube-video-preview" href="https://youtu.be/PeENrbJvSIY" aria-label="PulsePower · YouTube">
+                <img src="public/assets/images/pulsepower-video-thumbnail.jpg" alt="" loading="lazy" />
+                <span class="youtube-play-btn" aria-hidden="true">
+                    <i class="fas fa-play"></i>
+                </span>
+            </a>
+            <template id="pulsepower-video-player">
+                <iframe
+                    src="https://www.youtube.com/embed/PeENrbJvSIY?autoplay=1&amp;playsinline=1"
+                    title="PulsePower"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                ></iframe>
+            </template>
         </div>
 
         <!-- Interactive Feature Tabs -->

@@ -901,6 +901,23 @@ img, svg {
   background: #0B132B;
 }
 
+.youtube-video-preview img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.youtube-video-preview .youtube-play-btn {
+  position: relative;
+}
+
+.youtube-video-preview:focus-visible {
+  outline: 3px solid white;
+  outline-offset: -5px;
+}
+
 .youtube-play-btn {
   width: 96px;
   height: 68px;

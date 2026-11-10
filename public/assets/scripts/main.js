@@ -163,17 +163,22 @@ document.addEventListener('DOMContentLoaded', function () {
         serviceCards[0].classList.add('active');
     }
 
+    // Start the YouTube player in place when the preview is activated.
+    var videoPreview = document.querySelector('.youtube-video-preview');
+    var playerTemplate = document.getElementById('pulsepower-video-player');
+    if (videoPreview && playerTemplate) {
+        videoPreview.addEventListener('click', function (event) {
+            if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+            event.preventDefault();
+            var player = playerTemplate.content.firstElementChild.cloneNode(true);
+            videoPreview.replaceWith(player);
+            player.focus();
+        });
+    }
+
     // Video Section Tabs
     var videoTabs = document.querySelectorAll('.video-feature-tab');
     var videoTabContent = document.getElementById('video-feature-desc');
-    var videoIframe = document.getElementById('pulsepower-video-frame');
-
-    var videoEmbeds = {
-        "tab1": "https://www.youtube.com/embed/5qap5aO4i9A?si=pulsepower",
-        "tab2": "https://www.youtube.com/embed/vu7Rlkn2lEc?si=pulsepower",
-        "tab3": "https://www.youtube.com/embed/LpOAo21-778?si=pulsepower",
-        "tab4": "https://www.youtube.com/embed/jNQXAC9IVRw?si=pulsepower"
-    };
 
     videoTabs.forEach(function (tab) {
         tab.addEventListener('click', function () {
@@ -181,10 +186,6 @@ document.addEventListener('DOMContentLoaded', function () {
             tab.classList.add('active');
 
             var tabKey = tab.dataset.tab;
-            if (videoIframe && videoEmbeds[tabKey]) {
-                videoIframe.src = videoEmbeds[tabKey];
-            }
-
             if (videoTabContent) {
                 var transKey = 'videoSection.' + tabKey + 'Desc';
                 videoTabContent.setAttribute('data-i18n', transKey);
